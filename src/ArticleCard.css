@@ -1,0 +1,13 @@
+.articleCard {
+    margin: 20px;
+}
+
+.title {
+    width: 40%;
+    padding-bottom: 2px;
+    border-bottom: solid 3px yellow;
+}
+
+.date {
+    padding-top: 5px;
+}

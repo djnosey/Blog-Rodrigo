@@ -1,16 +1,22 @@
 import React from 'react';
+import ArticleCard from './ArticleCard';
 import Navbar from './Navbar';
+import "./app.css"
 
 
 //BEM
 
 function App() {
   return (
-    <div className="App">
+    <div className="app">
         <Navbar />
-        {/*image*/}
+        <div className ="app__left">
+        <ArticleCard />
+        <ArticleCard />
+        <ArticleCard />
+        </div>
         {/*left side*/}
-        {/*featured articles*/}
+        
         {/*right side*/}
         {/*sidebar*/}
     </div>

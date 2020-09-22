@@ -12,7 +12,7 @@ const theme = createMuiTheme({
   },
   typography: {
     fontFamily: [
-      'Roboto',
+      'Ubuntu',
       'BlinkMacSystemFont',
       '"Segoe UI"',
       '"Helvetica Neue"',
