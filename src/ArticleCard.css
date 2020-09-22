@@ -5,9 +5,9 @@
 .title {
     width: 40%;
     padding-bottom: 2px;
-    border-bottom: solid 3px yellow;
+    border-bottom: solid 3px rgb(255,236,54);
 }
 
 .date {
-    padding-top: 5px;
+    padding-top: 10px;
 }

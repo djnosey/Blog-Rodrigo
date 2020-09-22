@@ -6,10 +6,10 @@ import "./Navbar.css";
 
 function Navbar() {
   return (
-    <div>
+    <div className="navbar__container">
       <div className ="navbar" >
             <div>
-              <h2 className ="navbar__title">  avisoemdois.com.br </h2>
+              <h2 className ="navbar__title">   </h2>
             </div>
             <div>
               <img alt="logo" src={logo}></img>
