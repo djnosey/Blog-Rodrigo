@@ -10,19 +10,20 @@ import "./Navbar.css";
 function Navbar() {
   return (
     <div>
-      <AppBar color="secondary">
-        <Toolbar color="secondary">
-          <div className="navbar__left">
-            <img alt="logo" src={logo}></img>
-            <Typography variant="h4">avisoemdois.com.br</Typography>
-          </div>
-          <div>
-            <IconButton edge="end" color="primary" aria-label="menu">
-              <MenuIcon className ="navbar__button" />
-            </IconButton>
-          </div>
-        </Toolbar>
-      </AppBar>
+      <div className ="navbar" >
+            <div>
+              <h2 className ="navbar__title">  avisoemdois.com.br </h2>
+            </div>
+            <div>
+              <img alt="logo" src={logo}></img>
+            </div>
+
+            <div className ="navbar__button">
+              <IconButton   color="primary" aria-label="menu">
+                <MenuIcon className="navbar__icon"  />
+              </IconButton>
+            </div>
+      </div>
     </div>
   );
 }
