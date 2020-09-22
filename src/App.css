@@ -2,13 +2,14 @@
 .app{
     display: flex;
     flex-direction: column;
+    width: 100%;
 }
 
 .app__container{
     display: flex;
-    padding:40px;
+    padding: 0 40px;
         justify-content: space-evenly;
-        margin: 0 auto;
+        margin: 50px auto;
 
 }
 
@@ -18,12 +19,28 @@
 }
 
 .app__right {
-    padding:20px;
-    background-color:rgb(224, 224, 224);
+    
+    top:50px;
+    padding:7px;
+    background-color:white;
     flex:0.3;
     height: 90%;
     display: flex;
     flex-direction: column;
-    border-radius: 6px;
+    border-radius: 4px;
+    border:1px solid lightgray;
     margin-top: 15px;
+    -webkit-box-shadow: 3px -2px 15px -8px #919191;
+-moz-box-shadow: 3px -2px 15px -8px #919191;
+box-shadow: 3px -2px 15px -8px #919191;
+}
+
+.backgroundimage {
+    margin-top: 100px;
+    width: 100%;
+    height:300px;
+    margin-bottom: -360px;
+    z-index: -5;
+    opacity: 0.7;
+    mask-image: linear-gradient(180deg, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1));
 }

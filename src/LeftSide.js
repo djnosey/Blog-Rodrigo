@@ -7,9 +7,10 @@ function LeftSide() {
     const featuredArticles = data.articles.map(elem => <ArticleCard 
         title={elem.title}
         date ={elem.date}
-        headline = {elem.headline} />)
+        headline = {elem.headline} 
+        />)
     return (
-       [featuredArticles]
+       featuredArticles
     )
 }
 
