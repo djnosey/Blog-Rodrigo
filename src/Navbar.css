@@ -18,3 +18,8 @@ img {
     flex-grow: 1;
 }
 
+.navbar__button {
+    height: 35px !important;
+    width: 35px !important;
+}
+

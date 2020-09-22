@@ -18,7 +18,7 @@ function Navbar() {
           </div>
           <div>
             <IconButton edge="end" color="primary" aria-label="menu">
-              <MenuIcon />
+              <MenuIcon className ="navbar__button" />
             </IconButton>
           </div>
         </Toolbar>

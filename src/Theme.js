@@ -15,7 +15,6 @@ const theme = createMuiTheme({
       'Roboto',
       'BlinkMacSystemFont',
       '"Segoe UI"',
-      'Roboto',
       '"Helvetica Neue"',
       'Arial',
       'sans-serif',
