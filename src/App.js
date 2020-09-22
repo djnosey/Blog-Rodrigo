@@ -1,10 +1,13 @@
 import React from 'react';
-import './App.scss';
+import Navbar from './Navbar';
+
+
+
 
 function App() {
   return (
     <div className="App">
-        <h1>Blog Rodrigo</h1>
+        <Navbar />
     </div>
   );
 }
