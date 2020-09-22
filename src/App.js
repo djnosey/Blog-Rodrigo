@@ -4,7 +4,7 @@ import './App.scss';
 function App() {
   return (
     <div className="App">
-        <h1>check no margin</h1>
+        <h1>Blog Rodrigo</h1>
     </div>
   );
 }
