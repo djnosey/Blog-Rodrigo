@@ -1,4 +1,4 @@
-import React from "react";
+import React,{  useContext } from "react";
 import Card from "@material-ui/core/Card";
 import CardActions from "@material-ui/core/CardActions";
 import CardContent from "@material-ui/core/CardContent";
@@ -10,8 +10,16 @@ import "./ArticleCard.css";
 
 
 function ArticleCard(props) {
+  
+
+
+
+
+
+
   return (
     <div className="articleCard">
+      
       <Card>
         <CardContent>
           <Typography className="title" variant="h5" component="h2">
@@ -25,7 +33,7 @@ function ArticleCard(props) {
           </Typography>
         </CardContent>
         <CardActions>
-          <Button variant="outlined" size="small">
+          <Button variant="outlined" size="small" key = {props.id}>
             Artigo completo
           </Button>
         </CardActions>
@@ -35,3 +43,4 @@ function ArticleCard(props) {
 }
 
 export default ArticleCard;
+

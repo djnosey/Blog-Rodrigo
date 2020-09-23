@@ -13,7 +13,8 @@ function LeftSide() {
     const featuredArticles = imageCardArray.map(elem => <ArticleCard 
         title={elem.title}
         date ={elem.date}
-        headline = {elem.headline} 
+        headline = {elem.headline}
+        key = {elem.id} 
         />)
 
 

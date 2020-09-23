@@ -1,12 +1,22 @@
-import React from 'react'
+import React, {useContext} from 'react'
 import './articlepage.css'
-import data from 'data.json'
+import {articleNumber} from "./ArticleCard"
+import data from './data.json'
 
-function ArticlePage() {
+function ArticlePage(props) {
+
+
+    const i = useContext(articleNumber)
+
     return (
+
+
+
         <div className ="articlepage">
 
-            <img ></img>
+            <img src = "https://images.freeimages.com/images/premium/previews/5623/5623964-podium-finish.jpg"></img>
+            <h1>{data.articles[i].headline}</h1>
+            <p>content goes here</p>
             
         </div>
     )
