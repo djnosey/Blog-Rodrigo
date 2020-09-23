@@ -1,7 +1,8 @@
 .footer {
     display: flex;
+    
     width: 100%;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
     background-color:white ;
     border-top: 2px solid lightgrey ;
@@ -9,4 +10,52 @@
     -webkit-box-shadow: 0px -4px 19px -4px rgba(224,224,224,1);
 -moz-box-shadow: 0px -4px 19px -4px rgba(224,224,224,1);
 box-shadow: 0px -4px 19px -4px rgba(224,224,224,1);
+}
+
+.footer__social {
+    margin-left: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.footer__youtube{
+    margin: 10px;
+    height:65px !important;
+    width: 65px !important;
+}
+
+.footer__linkedin{
+    margin: 10px;
+    height:60px !important;
+    width: 60px !important;
+}
+
+.footer__contact {
+    margin-right: 15px;
+    display: flex;
+    flex-direction: column;
+
+}
+
+
+
+.footer__email{
+    margin-top: 20px;
+    display: flex;
+    padding: 5px;
+
+}
+
+.footer__email > p {
+    margin-left: 10px;
+}
+
+.footer__phone{
+    display: flex;
+    padding: 5px;
+
+}
+
+.footer__phone > p {
+    margin-left: 10px;
 }

@@ -13,7 +13,7 @@ function ArticlePage(props) {
 
             <img 
             alt="..." /*data.article.title*/ 
-            src ="..." /*this should be data.articles.image*//>
+            src ="..." /*this should be data.articles.title*//>
             <h1>article headline</h1> {/*this should be data.articles.headline*/}
             <p>content goes here</p>    {/*this should be data.articles.content*/}
             
