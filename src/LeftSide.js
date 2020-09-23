@@ -1,6 +1,7 @@
 import React from 'react'
 import data from "./data.json"
 import ArticleCard from "./ArticleCard"
+import "./leftSide.css"
 
 function LeftSide() {
 
@@ -20,7 +21,10 @@ function LeftSide() {
 
 
     return (
-       featuredArticles
+        <div>
+            {featuredArticles}
+        </div>
+       
     )
 }
 

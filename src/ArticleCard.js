@@ -24,7 +24,7 @@ function ArticleCard(props) {
   return (
     <div className="articleCard">
       
-      <Card>
+      <Card >
         <CardContent>
           <Typography className="title" variant="h5" component="h2">
             {props.title}
@@ -32,7 +32,7 @@ function ArticleCard(props) {
           <Typography className="date" color="textSecondary" gutterBottom>
             {props.date}
           </Typography>
-          <Typography variant="body2" component="p">
+          <Typography className ="headline" variant="body2" component="p">
             {props.headline}
           </Typography>
         </CardContent>

@@ -4,6 +4,7 @@ import YouTubeIcon from "@material-ui/icons/YouTube";
 import LinkedInIcon from "@material-ui/icons/LinkedIn";
 import EmailIcon from '@material-ui/icons/Email';
 import PhoneIphoneIcon from '@material-ui/icons/PhoneIphone';
+import TwitterIcon from '@material-ui/icons/Twitter';
 
 
 
@@ -29,6 +30,15 @@ function Footer() {
             color="primary"
             fontSize="large"
             className="footer__linkedin"
+          />
+
+          </a>
+
+          <a href="https://twitter.com/avisoemdois">
+          <TwitterIcon
+            color="primary"
+            fontSize="large"
+            className="footer__twitter"
           />
 
           </a>
