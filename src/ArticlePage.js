@@ -1,6 +1,5 @@
-import React, {useContext} from 'react'
+import React from 'react'
 import './articlepage.css'
-import data from './data.json'
 
 function ArticlePage(props) {
 
@@ -12,7 +11,9 @@ function ArticlePage(props) {
 
         <div className ="articlepage">
 
-            <img src /*this should be data.articles.image*/></img>
+            <img 
+            alt="..." /*data.article.title*/ 
+            src ="..." /*this should be data.articles.image*//>
             <h1>article headline</h1> {/*this should be data.articles.headline*/}
             <p>content goes here</p>    {/*this should be data.articles.content*/}
             
