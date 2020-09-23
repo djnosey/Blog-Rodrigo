@@ -12,9 +12,9 @@ function ArticlePage(props) {
 
         <div className ="articlepage">
 
-            <img src = "https://images.freeimages.com/images/premium/previews/5623/5623964-podium-finish.jpg"></img>
-            <h1>article headline</h1>
-            <p>content goes here</p>
+            <img src /*this should be data.articles.image*/></img>
+            <h1>article headline</h1> {/*this should be data.articles.headline*/}
+            <p>content goes here</p>    {/*this should be data.articles.content*/}
             
             
         </div>
