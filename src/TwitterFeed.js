@@ -8,7 +8,7 @@ function TwitterFeed() {
         <div className ="twitterFeed">
             <TwitterTimelineEmbed
   sourceType="profile"
-  screenName="TheEconomist"
+  screenName="avisoemdois"
   options={{height: 1000}}
 />
             </div>

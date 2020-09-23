@@ -1,46 +1,89 @@
-
-.app{
-    display: flex;
-    flex-direction: column;
-    width: 100%;
+.app {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
 }
 
-.app__container{
-    display: flex;
-    padding: 0 40px;
-        justify-content: space-evenly;
-        margin: 50px auto;
-
+.app__container {
+  display: flex;
+  padding: 0 40px;
+  justify-content: space-evenly;
+  margin: 50px auto;
 }
 
-.app__left{
-    flex:0.8;
-    
+.app__left {
+  flex: 0.2;
+}
+
+.app__center {
+  flex: 0.7;
 }
 
 .app__right {
-    
-    top:50px;
-    padding:7px;
-    background-color:white;
-    flex:0.3;
-    height: 90%;
-    display: flex;
-    flex-direction: column;
-    border-radius: 4px;
-    border:1px solid lightgray;
-    margin-top: 15px;
-    -webkit-box-shadow: 3px -2px 15px -8px #919191;
--moz-box-shadow: 3px -2px 15px -8px #919191;
-box-shadow: 3px -2px 15px -8px #919191;
+  top: 50px;
+  padding: 7px;
+  background-color: white;
+  flex: 0.2;
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+  border-radius: 4px;
+  border: 1px solid lightgray;
+  margin-top: 15px;
+  -webkit-box-shadow: 3px -2px 15px -8px #919191;
+  -moz-box-shadow: 3px -2px 15px -8px #919191;
+  box-shadow: 3px -2px 15px -8px #919191;
 }
 
 .backgroundimage {
-    margin-top: 100px;
-    width: 100%;
-    height:300px;
-    margin-bottom: -360px;
-    z-index: -5;
-    opacity: 0.7;
-    mask-image: linear-gradient(180deg, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1));
+  margin-top: 100px;
+  width: 100%;
+  height: 300px;
+  margin-bottom: -360px;
+  z-index: -5;
+  opacity: 0.7;
+  mask-image: linear-gradient(180deg, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1));
+}
+
+@media (max-width:800px){
+  .app__container{
+      flex-direction: column;
+  }
+
+  .app__center{
+      order: 1;
+
+  }
+  .app__left{
+      order: 2;
+      padding-right: 16px;
+  }
+  .app__right{
+      order: 3;
+      width: 75%;
+      align-self: center;
+  }
+}
+
+@media (max-width: 440px) {
+  .app__container {
+    flex-direction: column;
+    width: 80%;
+    justify-content: center;
+  }
+
+ 
+
+  .app__center {
+    order: 1;
+  }
+  .app__left {
+    order: 2;
+    margin-right: 16px;
+  }
+  .app__right {
+    order: 3;
+    
+    
+  }
 }
