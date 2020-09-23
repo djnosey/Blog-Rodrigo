@@ -1,32 +1,27 @@
 import React from "react";
-import Navbar from "./Navbar";
 import "./app.css";
-import Footer from "./Footer";
-import TwitterFeed from "./TwitterFeed";
-import LeftSide from "./LeftSide";
-import Center from "./Center"
+import Home from "./Home";
+import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import Navbar from "./Navbar";
 
 //BEM
 
 function App() {
+  const listenScrollEvent = () => {
+    console.log("Scroll event detected!");
+  };
+
+  listenScrollEvent();
 
   return (
-    <div className="app">
+    <Router>
       <Navbar />
-      <div className="app__container">
-
-        <div className="app__left">
-          <LeftSide />
-        </div>
-        <div className="app__center">
-          <Center />
-        </div>
-        <div className="app__right">
-          <TwitterFeed />
-        </div>
-      </div>
-      <Footer />
-    </div>
+      <Switch>
+        <Route path="/">
+          <Home />
+        </Route>
+      </Switch>
+    </Router>
   );
 }
 

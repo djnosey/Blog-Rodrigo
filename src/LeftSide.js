@@ -4,11 +4,20 @@ import ArticleCard from "./ArticleCard"
 
 function LeftSide() {
 
-    const featuredArticles = data.articles.map(elem => <ArticleCard 
+    const imageCardArray =[];
+
+    for(let i = 2 ;i< 5; i++){
+        imageCardArray.push(data.articles[i])
+    }
+
+    const featuredArticles = imageCardArray.map(elem => <ArticleCard 
         title={elem.title}
         date ={elem.date}
         headline = {elem.headline} 
         />)
+
+
+
     return (
        featuredArticles
     )

@@ -13,13 +13,16 @@ function Center() {
     const featuredArticles = imageCardArray.map(elem => <ImageCard 
         title={elem.title}
         headline = {elem.headline} 
+        image= {elem.image}
+        
         />)
-
-    console.log(imageCardArray)
    
 
     return (
-       featuredArticles
+        <div className ="center">
+{featuredArticles}
+        </div>
+       
     )
 }
 
