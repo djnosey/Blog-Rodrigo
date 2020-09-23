@@ -8,9 +8,12 @@ import Typography from "@material-ui/core/Typography";
 import CardActionArea from "@material-ui/core/CardActionArea"
 import CardMedia from "@material-ui/core/CardMedia"
 import articleImage1 from "./images/articleImage1.jpg"
-import data from "./data.json"
 
-function ImageCard() {
+function ImageCard(props) {
+
+    
+
+
     return (
         <div className ="imageCard">
 
@@ -20,14 +23,14 @@ function ImageCard() {
           
           component= "img"
           image = {articleImage1}
-          title="Contemplative Reptile"
+          title = {props.title}
         />
         <CardContent>
           <Typography gutterBottom variant="h5" component="h2">
-            {data.articles[0].title}
+            {props.title}
           </Typography>
           <Typography variant="body2" color="textSecondary" component="p">
-            {data.articles[0].headline}
+            {props.headline}
           </Typography>
         </CardContent>
       </CardActionArea>

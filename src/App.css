@@ -6,7 +6,8 @@
 
 .app__container {
   display: flex;
-  padding: 0 40px;
+  width:80%;
+  padding: 0 60px;
   justify-content: space-evenly;
   margin: 50px auto;
 }
@@ -16,7 +17,7 @@
 }
 
 .app__center {
-  flex: 0.7;
+  flex: 0.5;
 }
 
 .app__right {

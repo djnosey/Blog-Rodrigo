@@ -12,7 +12,7 @@ function Navbar() {
           <h2 className="navbar__title"> </h2>
         </div>
         <div >
-          <img className ="navbar__logo" src={logo}></img>
+          <img alt="A2 logo" className ="navbar__logo" src={logo}></img>
         </div>
 
         <div className="navbar__button">

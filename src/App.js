@@ -4,7 +4,7 @@ import "./app.css";
 import Footer from "./Footer";
 import TwitterFeed from "./TwitterFeed";
 import LeftSide from "./LeftSide";
-import ImageCard from "./ImageCard";
+import Center from "./Center"
 
 //BEM
 
@@ -19,8 +19,7 @@ function App() {
           <LeftSide />
         </div>
         <div className="app__center">
-          <ImageCard />
-          <ImageCard />
+          <Center />
         </div>
         <div className="app__right">
           <TwitterFeed />
