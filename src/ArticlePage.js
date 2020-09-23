@@ -1,12 +1,10 @@
 import React, {useContext} from 'react'
 import './articlepage.css'
-import {articleNumber} from "./ArticleCard"
 import data from './data.json'
 
 function ArticlePage(props) {
 
 
-    const i = useContext(articleNumber)
 
     return (
 
@@ -15,8 +13,9 @@ function ArticlePage(props) {
         <div className ="articlepage">
 
             <img src = "https://images.freeimages.com/images/premium/previews/5623/5623964-podium-finish.jpg"></img>
-            <h1>{data.articles[i].headline}</h1>
+            <h1>article headline</h1>
             <p>content goes here</p>
+            
             
         </div>
     )
