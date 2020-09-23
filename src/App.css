@@ -8,9 +8,9 @@
   display: flex;
   width:80%;
   height: fit-content;
- 
+  border-bottom: solid 3px rgb(255,236,54);
 
-  padding: 0 60px 10px 60px;
+  padding: 0 60px 40px 60px;
 
   justify-content: space-evenly;
   margin: 70px auto 20px auto;
@@ -18,6 +18,8 @@
 
 .app__left {
   flex: 0.3;
+
+
   
 }
 
