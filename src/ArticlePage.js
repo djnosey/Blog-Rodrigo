@@ -1,24 +1,27 @@
-import React, {useContext} from 'react'
-import './articlepage.css'
-import data from './data.json'
+import React, { useContext } from "react";
+import { useLocation, Link } from "react-router-dom";
+import "./articlepage.css";
+import data from "./data.json";
+import { Button } from "@material-ui/core";
 
 function ArticlePage(props) {
+  const location = useLocation();
+  const params = new URLSearchParams(location.search);
 
+  const currentCard =
+    data.articles.filter((card) => card.id === params.get("id"))[0] || {};
 
-
-    return (
-
-
-
-        <div className ="articlepage">
-
-            <img src /*this should be data.articles.image*/></img>
-            <h1>article headline</h1> {/*this should be data.articles.headline*/}
-            <p>content goes here</p>    {/*this should be data.articles.content*/}
-            
-            
-        </div>
-    )
+  return (
+    <div className="articlepage">
+      <img src={currentCard.image} /*this should be data.articles.image*/></img>
+      <h1>{currentCard.headline}</h1>
+      {/*this should be data.articles.headline*/}
+      <p>{currentCard.content}</p> {/*this should be data.articles.content*/}
+      <div>
+        <Link to="/">Back</Link>
+      </div>
+    </div>
+  );
 }
 
-export default ArticlePage
+export default ArticlePage;
