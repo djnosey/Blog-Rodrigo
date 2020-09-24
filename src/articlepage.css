@@ -1,3 +1,50 @@
 .articlepage {
+  margin-top: 50pxpx;
+}
+
+.articlepage > img {
+  width: 100%;
+  max-height: 400px;
+  margin-bottom: 20px;
+}
+
+.articlepage > h1 {
+  width: 40%;
+  margin-left: 16px;
+  margin-bottom: 10px;
+  border-bottom: solid 3px rgb(255,236,54);
+  padding-bottom: 10px;
+
+}
+
+.articlepage > h3 {
+  width: fit-content;
+  padding-bottom: 10px;
+  margin-left: 16px;
+  margin-bottom: 30px;
+  border-bottom: solid 3px rgb(255,236,54);
+
+}
+
+.articlepage__paragraphs {
+  margin: 20px auto;
+}
+
+.articlepage__paragraphs >p {
+  margin-left: 60px;
+  line-height: 1.5em;
+  margin-right: 60px;
+  margin-bottom: 10px;
+}
+
+.articlePage__more{
   margin-top: 100px;
+}
+
+.articlePage__back {
+  margin-left: 16px;
+}
+
+.articlepage__video {
+  width: 50%;
 }

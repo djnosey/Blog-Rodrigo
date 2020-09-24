@@ -3,6 +3,7 @@ import IconButton from "@material-ui/core/IconButton";
 import MenuIcon from "@material-ui/icons/Menu";
 import logo from "./images/logo.png";
 import "./Navbar.css";
+import {Link} from "react-router-dom"
 
 function Navbar() {
   return (
@@ -12,7 +13,8 @@ function Navbar() {
           <h2 className="navbar__title"> </h2>
         </div>
         <div >
-          <img alt="A2 logo" className ="navbar__logo" src={logo}></img>
+          <Link to = "/"><img alt="A2 logo" className ="navbar__logo" src={logo}></img></Link>
+          
         </div>
 
         <div className="navbar__button">
