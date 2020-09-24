@@ -100,5 +100,26 @@
 
 }
 
+.articlepage > h1 {
+  width: 100%;
+  margin: auto;
+
+
+}
+.articlepage > h4 {
+  align-self: flex-start;
+  margin:auto;
+  color: darkgray;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+
+  border-bottom: solid 3px rgb(255,236,54);
+
+}
+.articlepage > h3 {
+  width: fit-content;
+  padding-bottom: 10px;
+  margin:auto}
+
 
 }
