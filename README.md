@@ -1,6 +1,13 @@
 configuration of data.json file to update the app
+
+**new article objects should be added to the top!! 
+
+as all the functions read from 0 to array.length
 *************************************************
 
+********************************
+**list of keys and their purpose**
+*****************************+*
 
 *************************************
 id : always a unique ID is required as react REQUIRES a unique KEY for every list or automatically generated component
