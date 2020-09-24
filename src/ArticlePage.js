@@ -1,16 +1,13 @@
 import React from "react";
-import { useLocation} from "react-router-dom";
+import { useLocation } from "react-router-dom";
 import "./articlepage.css";
 import data from "./data.json";
 import Footer from "./Footer";
 import MoreArticles from "./MoreArticles";
-import YouTube from 'react-youtube-embed'
+import YouTube from "react-youtube-embed";
 import TwitterFeed from "./TwitterFeed";
 
 function ArticlePage(props) {
-
-
-
   const location = useLocation();
   const params = new URLSearchParams(location.search);
 
@@ -19,14 +16,36 @@ function ArticlePage(props) {
 
   return (
     <div className="articlepage">
+      {currentCard.image === "" ? (
+        <div></div>
+      ) : (
+        <img src={currentCard.image} alt={currentCard.title} />
+      )}
 
-      {currentCard.image === "" ? <div></div> : <img src={currentCard.image} alt={currentCard.title} /> }
-
-      
       <h1>{currentCard.title}</h1>
+      <h4>
+        Publicado em {currentCard.date} por {currentCard.author}
+      </h4>
       <h3>{currentCard.headline}</h3>
 
-      <div className ="articlePage__top">
+      <div className="articlePage__top">
+        <div className="articlepage__paragraphs">
+          <p>{currentCard.paragraph1}</p>
+          <p>{currentCard.paragraph2}</p>
+          <p>{currentCard.paragraph3}</p>
+          <p>{currentCard.paragraph4}</p>
+          <p>{currentCard.paragraph5}</p>
+          <p>{currentCard.paragraph6}</p>
+          <p>{currentCard.paragraph7}</p>
+          <p>{currentCard.paragraph8}</p>
+          <p>{currentCard.paragraph9}</p>
+          <p>{currentCard.paragraph10}</p>
+        </div>
+        <div className="articlePage__twitter">
+          <TwitterFeed />
+        </div>
+      </div>
+
       <div className="articlepage__paragraphs">
         <p>{currentCard.paragraph1}</p>
         <p>{currentCard.paragraph2}</p>
@@ -39,27 +58,17 @@ function ArticlePage(props) {
         <p>{currentCard.paragraph9}</p>
         <p>{currentCard.paragraph10}</p>
       </div>
-      <div className = "articlePage__twitter">
-      <TwitterFeed />
-      </div>
-      
-      </div>
 
-      <div className="articlepage__paragraphs">
-        <p>{currentCard.paragraph1}</p>
-        <p>{currentCard.paragraph2}</p>
-        <p>{currentCard.paragraph3}</p>
-        <p>{currentCard.paragraph4}</p>
-        <p>{currentCard.paragraph5}</p>
-        <p>{currentCard.paragraph6}</p>
-        <p>{currentCard.paragraph7}</p>
-        <p>{currentCard.paragraph8}</p>
-        <p>{currentCard.paragraph9}</p>
-        <p>{currentCard.paragraph10}</p>
-      </div>
-
-      {currentCard.secondImage === "" ? <div></div> : <img alt={currentCard.title} src={currentCard.secondImage}></img>}
-      {currentCard.iframe === "" ? <div></div> : <YouTube className = "ariclePage__video" id={currentCard.iframe} />}
+      {currentCard.secondImage === "" ? (
+        <div></div>
+      ) : (
+        <img alt={currentCard.title} src={currentCard.secondImage}></img>
+      )}
+      {currentCard.iframe === "" ? (
+        <div></div>
+      ) : (
+        <YouTube className="ariclePage__video" id={currentCard.iframe} />
+      )}
 
       <div className="articlepage__paragraphs">
         <p>{currentCard.paragraph11}</p>
@@ -74,10 +83,8 @@ function ArticlePage(props) {
         <p>{currentCard.paragraph20}</p>
       </div>
 
-      <MoreArticles className ="articlePage__more" />
-      <Footer />
-
-    
+      <MoreArticles className="articlePage__more" />
+      
     </div>
   );
 }

@@ -6,9 +6,9 @@
 
 .app__container {
   display: flex;
-  width:80%;
+  width: 80%;
   height: fit-content;
-  border-bottom: solid 3px rgb(255,236,54);
+  border-bottom: solid 3px rgb(255, 236, 54);
 
   padding: 0 60px 40px 60px;
 
@@ -18,9 +18,6 @@
 
 .app__left {
   flex: 0.3;
-
-
-  
 }
 
 .app__center {
@@ -53,23 +50,22 @@
   mask-image: linear-gradient(180deg, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1));
 }
 
-@media (max-width:800px){
-  .app__container{
-      flex-direction: column;
+@media (max-width: 800px) {
+  .app__container {
+    flex-direction: column;
   }
 
-  .app__center{
-      order: 1;
-
+  .app__center {
+    order: 1;
   }
-  .app__left{
-      order: 2;
-      padding-right: 16px;
+  .app__left {
+    order: 2;
+    padding-right: 16px;
   }
-  .app__right{
-      order: 3;
-      width: 70%;
-      align-self: center;
+  .app__right {
+    order: 3;
+    width: 70%;
+    align-self: center;
   }
 }
 
@@ -80,8 +76,6 @@
     justify-content: center;
   }
 
- 
-
   .app__center {
     order: 1;
   }
@@ -91,7 +85,5 @@
   }
   .app__right {
     order: 3;
-    
-    
   }
 }

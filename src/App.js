@@ -4,6 +4,7 @@ import Home from "./Home";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Navbar from "./Navbar";
 import ArticlePage from "./ArticlePage";
+import Footer from "./Footer";
 
 //BEM
 
@@ -26,6 +27,7 @@ function App() {
           <Home />
         </Route>
       </Switch>
+      <Footer />
     </Router>
   );
 }
