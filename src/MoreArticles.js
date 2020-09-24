@@ -23,7 +23,7 @@ function MoreArticles() {
         <h2>More articles</h2>
       <ul>
         {list.map((item) => (
-          <Link to={`/article?id=${item.id}`} onclick = {scrollTop()}><li id={item.id} key={item.id} >{item.title}</li></Link>
+          <Link to={`/article?id=${item.id}`} onClick = {scrollTop()}><li id={item.id} key={item.id} >{item.title}</li></Link>
           
         ))}
       </ul>

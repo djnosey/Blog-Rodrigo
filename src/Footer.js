@@ -17,7 +17,7 @@ function Footer() {
         </div>
 
         <div>
-            <a href ="https://www.youtube.com/channel/UClXOb1IQs4AIQZI4BqNMGZg">
+            <a target ="_blank" rel="noopener noreferrer" href ="https://www.youtube.com/channel/UClXOb1IQs4AIQZI4BqNMGZg">
             <YouTubeIcon
             color="primary"
             fontSize="large"
@@ -25,7 +25,7 @@ function Footer() {
           />
 
             </a>
-          <a href="https://www.linkedin.com/groups/8308917/">
+          <a target ="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/groups/8308917/">
           <LinkedInIcon
             color="primary"
             fontSize="large"
@@ -34,7 +34,7 @@ function Footer() {
 
           </a>
 
-          <a href="https://twitter.com/avisoemdois">
+          <a target ="_blank" rel="noopener noreferrer" href="https://twitter.com/avisoemdois">
           <TwitterIcon
             color="primary"
             fontSize="large"

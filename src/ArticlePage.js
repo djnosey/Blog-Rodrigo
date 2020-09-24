@@ -2,7 +2,6 @@ import React from "react";
 import { useLocation } from "react-router-dom";
 import "./articlepage.css";
 import data from "./data.json";
-import Footer from "./Footer";
 import MoreArticles from "./MoreArticles";
 import YouTube from "react-youtube-embed";
 import TwitterFeed from "./TwitterFeed";

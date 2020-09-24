@@ -31,6 +31,10 @@
   width: 200px;
 }
 
+.navbar__title > a {
+  padding-right: 6px;
+}
+
 .navbar__button {
   display: flex;
   margin-right: 20px;

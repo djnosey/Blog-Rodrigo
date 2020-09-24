@@ -10,11 +10,6 @@ import Footer from "./Footer";
 
 function App() {
 
-  const listenScrollEvent = () => {
-    console.log("Scroll event detected!");
-  };
-
-  listenScrollEvent();
 
   return (
     <Router>
