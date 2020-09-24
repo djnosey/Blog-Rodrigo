@@ -2,6 +2,7 @@ import React from "react";
 import Center from "./Center";
 import Footer from "./Footer";
 import LeftSide from "./LeftSide";
+import MoreArticles from "./MoreArticles";
 import TwitterFeed from "./TwitterFeed";
 
 function Home() {
@@ -19,6 +20,7 @@ function Home() {
             <TwitterFeed />
           </div>
         </div>
+        <MoreArticles />
         <Footer />
       </div>
     </div>

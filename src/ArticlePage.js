@@ -1,9 +1,7 @@
-import React, { useContext } from "react";
+import React from "react";
 import { useLocation, Link } from "react-router-dom";
 import "./articlepage.css";
 import data from "./data.json";
-import { Button } from "@material-ui/core";
-
 function ArticlePage(props) {
   const location = useLocation();
   const params = new URLSearchParams(location.search);
@@ -13,7 +11,10 @@ function ArticlePage(props) {
 
   return (
     <div className="articlepage">
-      <img src={currentCard.image} /*this should be data.articles.image*/></img>
+      <img
+        src={currentCard.image}
+        alt={currentCard.id} /*this should be data.articles.image*/
+      ></img>
       <h1>{currentCard.headline}</h1>
       {/*this should be data.articles.headline*/}
       <p>{currentCard.content}</p> {/*this should be data.articles.content*/}

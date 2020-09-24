@@ -5,28 +5,33 @@
     "title":"“Ói nóis aqui traveis”",
     "date" :"11 de Agosto de 2020",
     "headline" : "O Aviso em Dois está de volta, com nova cara, mas com o mesmo propósito, que é o oferecer instrução financeira e assessoria.",
-    "content" : ""
+    "content" : "lipsum bla bla bla",
+    "category" : "1"
 },
 {"id": "02",
     "image":"https://images.freeimages.com/images/premium/previews/5623/5623964-podium-finish.jpg",     
     "title":"No pódio das projeções",
     "date" :"27 de Janeiro de 2017",
     "headline" : "",
-    "content" : ""
+    "content" : "lipsum bla bla blalipsum bla bla bla",
+    "category" : "2"
 },
 {"id": "03",    
     "image":"", 
     "title":"O que é o CDI?",
     "date" :"19 de Maio de 2016",
     "headline" : "CDI muito conhecido e pouco entendido pela maioria das pessoas.",
-    "content" : ""
+    "content" : "lipsum bla bla blalipsum bla bla blalipsum bla bla bla",
+    "category" : "3"
 },
 {"id": "04",
     "image":"",     
     "title":"Histórias do Império - O Boticão de Ouro",
     "date" :"28 de Janeiro de 2016",
     "headline" : "Os mercados entram em pânico, bolsas de valores despencaram, boatos de novo congelamento de preços pipocavam",
-    "content" : ""
+    "content" : "lipsum bla bla bla, lipsum bla bla bla, lipsum bla bla bla"
+    ,"category" : "3"
+
 },
 {"id": "05",  
     "image":""   ,
@@ -34,6 +39,49 @@
     "date" :"2 de Outubro de 2015",
     "headline" : "Assim era normal que corretoras e distribuidoras de menor porte eventualmente se unissem para enfrentar os gigantes do mercado",
     "content" : ""
+    ,"category" : "3"
+},
+
+{"id": "06",
+    "image":"https://storage.googleapis.com/avisoemdois-web.appspot.com/uploads/images/2020/08/11/R-14620324-1578323591-9691.jpeg.jpg",        
+    "title":"“Ói nóis aqui traveis”",
+    "date" :"11 de Agosto de 2020",
+    "headline" : "O Aviso em Dois está de volta, com nova cara, mas com o mesmo propósito, que é o oferecer instrução financeira e assessoria.",
+    "content" : "lipsum bla bla bla",
+    "category" : "1"
+},
+{"id": "07",
+    "image":"https://images.freeimages.com/images/premium/previews/5623/5623964-podium-finish.jpg",     
+    "title":"No pódio das projeções",
+    "date" :"27 de Janeiro de 2017",
+    "headline" : "",
+    "content" : "lipsum bla bla blalipsum bla bla bla",
+    "category" : "2"
+},
+{"id": "08",    
+    "image":"", 
+    "title":"O que é o CDI?",
+    "date" :"19 de Maio de 2016",
+    "headline" : "CDI muito conhecido e pouco entendido pela maioria das pessoas.",
+    "content" : "lipsum bla bla blalipsum bla bla blalipsum bla bla bla",
+    "category" : "3"
+},
+{"id": "09",
+    "image":"",     
+    "title":"Histórias do Império - O Boticão de Ouro",
+    "date" :"28 de Janeiro de 2016",
+    "headline" : "Os mercados entram em pânico, bolsas de valores despencaram, boatos de novo congelamento de preços pipocavam",
+    "content" : "lipsum bla bla bla, lipsum bla bla bla, lipsum bla bla bla"
+    ,"category" : "3"
+
+},
+{"id": "10",  
+    "image":""   ,
+    "title":"Histórias do Império - O Caminhão do Faustão",
+    "date" :"2 de Outubro de 2015",
+    "headline" : "Assim era normal que corretoras e distribuidoras de menor porte eventualmente se unissem para enfrentar os gigantes do mercado",
+    "content" : ""
+    ,"category" : "3"
 }
 
 

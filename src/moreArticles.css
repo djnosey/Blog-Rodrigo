@@ -1,0 +1,32 @@
+.moreArticles {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    width: 75%;
+    margin: 10px auto 30px auto;
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    -webkit-box-shadow: 3px -2px 15px -8px #919191;
+    -moz-box-shadow: 3px -2px 15px -8px #919191;
+    box-shadow: 3px -2px 15px -8px #919191;
+}
+
+.moreArticles > h2 {
+    text-align: center;
+    width: 50%;
+    margin: 7px;
+    border-bottom: solid 3px rgb(255,236,54);
+    padding-bottom: 5px;
+}
+
+.moreArticles > ul {
+    margin: 5px;
+}
+
+.moreArticles > ul > li {
+    list-style: none;
+    padding: 4px;
+}
