@@ -13,7 +13,7 @@ function ArticlePage(props) {
     <div className="articlepage">
       <img
         src={currentCard.image}
-        alt={currentCard.id} /*this should be data.articles.image*/
+        alt={currentCard.title} /*this should be data.articles.image*/
       ></img>
       <h1>{currentCard.headline}</h1>
       {/*this should be data.articles.headline*/}
