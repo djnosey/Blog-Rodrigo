@@ -1,10 +1,12 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import Card from "@material-ui/core/Card";
 import CardActions from "@material-ui/core/CardActions";
 import CardContent from "@material-ui/core/CardContent";
 import Button from "@material-ui/core/Button";
 import Typography from "@material-ui/core/Typography";
 import "./ArticleCard.css";
+<<<<<<< HEAD
 
 
 
@@ -17,17 +19,20 @@ import {
 
 
 
+=======
+>>>>>>> c5136019b5feb211fc16c7c046d5c5a97ae86144
 
 function ArticleCard(props) {
-  
-
-
-
 
   return (
     <div className="articleCard">
+<<<<<<< HEAD
       
       <Card>
+=======
+
+      <Card >
+>>>>>>> c5136019b5feb211fc16c7c046d5c5a97ae86144
         <CardContent>
           <Typography className="title" variant="h5" component="h2">
             {props.title}
@@ -35,17 +40,14 @@ function ArticleCard(props) {
           <Typography className="date" color="textSecondary" gutterBottom>
             {props.date}
           </Typography>
-          <Typography className ="headline" variant="body2" component="p">
+          <Typography className="headline" variant="body2" component="p">
             {props.headline}
           </Typography>
         </CardContent>
         <CardActions>
-          <Link to="/article">
-          <Button variant="outlined" size="small" key = {props.id}>
-            Artigo completo
+          <Button variant="outlined" size="small" key={props.id}>
+            <Link to={`/article?id=${props.id}`}>Artigo completo</Link>
           </Button>
-          </Link>
-          
         </CardActions>
       </Card>
     </div>
@@ -53,4 +55,3 @@ function ArticleCard(props) {
 }
 
 export default ArticleCard;
-
