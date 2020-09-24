@@ -87,26 +87,26 @@
   .navbar {
     height: 80px;
     width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
   }
 
   .navbar__container {
     width: 100%;
   }
-  .navbar__title {
-    display: none;
-  }
+ 
 
   .navbar__box {
     display: none;
   }
 
-  .navbar__logo {
-    height: 80px;
-    width: 80px;
-    bottom: 40px;
-    right: 30px;
+  .navbar__logo  {
+    margin-top: 0;
+    height: 70px !important;
+    width: 70px !important;
+    bottom:20px;
+    
   }
-  .navbar__title {
-    display: none;
-  }
+
 }

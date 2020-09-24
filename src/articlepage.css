@@ -77,3 +77,28 @@
 .articlepage__video {
   width: 50%;
 }
+
+@media (max-width:440px){
+  .articlePage__twitter {
+    display: none;
+    width: 100%;
+}
+
+.articlepage__paragraphs {
+  margin: 0;
+  border-radius: 3px;
+  background-color: white;
+  padding: 0;
+}
+
+.articlepage__paragraphs >p {
+
+  margin-left: auto;
+  line-height: 1.5em;
+  margin-right: auto;
+  margin-bottom: 10px;
+
+}
+
+
+}
