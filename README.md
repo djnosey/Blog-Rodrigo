@@ -4,7 +4,9 @@ configuration of data.json file to update the app
 
 as all the functions read from 0 to array.length
 *************************************************
-
+I have added a blank object 
+https://github.com/djnosey/Blog-Rodrigo/blob/master/src/NEWARTICLE.json
+so you can test witout having to type the entire object out. just fill in the details, copy it and paste it as the first item in the array of data.json
 ********************************
 **list of keys and their purpose**
 
