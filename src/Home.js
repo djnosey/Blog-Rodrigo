@@ -13,15 +13,17 @@ function Home() {
           <div className="app__left">
             <LeftSide />
           </div>
+          <div className ="app__line"></div>
           <div className="app__center">
             <Center />
           </div>
+          <div className ="app__line"></div>
           <div className="app__right">
             <TwitterFeed />
           </div>
         </div>
         <MoreArticles />
-        <Footer />
+        
       </div>
     </div>
   );

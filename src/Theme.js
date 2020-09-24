@@ -10,6 +10,7 @@ const theme = createMuiTheme({
       main: "#ffffff"
     },
   },
+  shadows : [0],
   typography: {
     fontFamily: [
       'Roboto',

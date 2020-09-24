@@ -9,9 +9,7 @@
     align-items: center;
     border: 1px solid lightgray;
     border-radius: 5px;
-    -webkit-box-shadow: 3px -2px 15px -8px #919191;
-    -moz-box-shadow: 3px -2px 15px -8px #919191;
-    box-shadow: 3px -2px 15px -8px #919191;
+  
 }
 
 .moreArticles > h2 {
