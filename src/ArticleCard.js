@@ -5,6 +5,9 @@ import CardContent from "@material-ui/core/CardContent";
 import Button from "@material-ui/core/Button";
 import Typography from "@material-ui/core/Typography";
 import "./ArticleCard.css";
+
+
+
 import {
   BrowserRouter as Router,
   Switch,
@@ -24,7 +27,7 @@ function ArticleCard(props) {
   return (
     <div className="articleCard">
       
-      <Card >
+      <Card>
         <CardContent>
           <Typography className="title" variant="h5" component="h2">
             {props.title}
