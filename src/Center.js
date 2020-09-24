@@ -15,6 +15,7 @@ function Center() {
         headline = {elem.headline} 
         image= {elem.image}
         key = {elem.id}
+        id = {elem.id}
         
         />)
    

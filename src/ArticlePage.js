@@ -8,13 +8,14 @@ function ArticlePage(props) {
 
   const currentCard =
     data.articles.filter((card) => card.id === params.get("id"))[0] || {};
-
+console.log(currentCard.image)
+console.log(currentCard.title)
   return (
     <div className="articlepage">
       <img
         src={currentCard.image}
         alt={currentCard.title} /*this should be data.articles.image*/
-      ></img>
+      />
       <h1>{currentCard.headline}</h1>
       {/*this should be data.articles.headline*/}
       <p>{currentCard.content}</p> {/*this should be data.articles.content*/}

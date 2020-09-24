@@ -6,33 +6,13 @@ import CardContent from "@material-ui/core/CardContent";
 import Button from "@material-ui/core/Button";
 import Typography from "@material-ui/core/Typography";
 import "./ArticleCard.css";
-<<<<<<< HEAD
-
-
-
-import {
-  BrowserRouter as Router,
-  Switch,
-  Route,
-  Link
-} from "react-router-dom";
-
-
-
-=======
->>>>>>> c5136019b5feb211fc16c7c046d5c5a97ae86144
 
 function ArticleCard(props) {
 
   return (
     <div className="articleCard">
-<<<<<<< HEAD
-      
-      <Card>
-=======
 
       <Card >
->>>>>>> c5136019b5feb211fc16c7c046d5c5a97ae86144
         <CardContent>
           <Typography className="title" variant="h5" component="h2">
             {props.title}
