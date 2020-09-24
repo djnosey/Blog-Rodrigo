@@ -10,10 +10,10 @@ so you can test witout having to type the entire object out. just fill in the de
 ********************************
 **list of keys and their purpose**
 
-*****************************+*
+******************************
 
 *************************************
-id : always a unique ID is required as react REQUIRES a unique KEY for every list or automatically generated component
+id : always a unique ID is required as react REQUIRES a unique KEY for every list or automatically generated component (it doesnt have to be in any order as long as its unique)
 *************************************
 image : TOP MEDIA//shown at top of article and in the article card on homepage (it has to be a url)
 **************************************
