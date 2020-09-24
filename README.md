@@ -1,12 +1,13 @@
 configuration of data.json file to update the app
 
-**new article objects should be added to the top!! 
+**new article objects should be added to the top!!** 
 
 as all the functions read from 0 to array.length
 *************************************************
 
 ********************************
 **list of keys and their purpose**
+
 *****************************+*
 
 *************************************
