@@ -12,9 +12,9 @@ as all the functions read from 0 to array.length
 *************************************
 id : always a unique ID is required as react REQUIRES a unique KEY for every list or automatically generated component
 *************************************
-image : TOP MEDIA//shown at top of article and in the article card on homepage
+image : TOP MEDIA//shown at top of article and in the article card on homepage (it has to be a url)
 **************************************
-secondImage : will render an image in the middle of article or an empty string for no image
+secondImage : will render an image in the middle of article or an empty string for no image (it has to be a url)
 **************************************
 title: will render on homepage "card" and in the article page
 **************************************
@@ -22,7 +22,7 @@ date : will render on homepage "card" and in the article page
 **************************************
 author : only renders on the article page
 **************************************
-iframe : will render a youtube video in the article page or an empty string for no video
+iframe : will render a youtube video in the article page or an empty string for no video (it has to be a url)
 **************************************
 headline : will render on homepage "card" and in the article page
 **************************************
