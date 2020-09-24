@@ -29,4 +29,5 @@
 .moreArticles > ul > li {
     list-style: none;
     padding: 4px;
+    text-decoration: none;
 }

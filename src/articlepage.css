@@ -1,5 +1,17 @@
 .articlepage {
-  margin-top: 50pxpx;
+  margin: 50px auto;
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.articlePage__top{
+  display: flex;
+}
+
+.articlePage__twitter{
+  border: 1px solid lightgray;
 }
 
 .articlepage > img {
@@ -14,6 +26,7 @@
   margin-bottom: 10px;
   border-bottom: solid 3px rgb(255,236,54);
   padding-bottom: 10px;
+  align-self: flex-start;
 
 }
 
@@ -23,6 +36,8 @@
   margin-left: 16px;
   margin-bottom: 30px;
   border-bottom: solid 3px rgb(255,236,54);
+  align-self: flex-start;
+
 
 }
 
