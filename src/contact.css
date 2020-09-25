@@ -4,7 +4,7 @@
     align-items: center;
     height: fit-content;
     width:100%;
-   margin:100px auto;
+   margin:60px auto;
 }
 
 form {
@@ -13,19 +13,46 @@ form {
     align-items: center;
 }
 
-form > * {
+.contact__name{
     width: 400px;
     height: 30px;
     padding: 10px;
     margin: 10px;
     border: 1px solid darkgray;
+
+}
+
+.contact__email{
+    width: 400px;
+    height: 30px;
+    padding: 10px;
+    margin: 10px;
+    border: 1px solid darkgray;
+
+}
+
+.contact__subject {
+    width: 400px;
+    height: 30px;
+    padding: 10px;
+    margin: 10px;
+    border: 1px solid darkgray;
+
 }
 
 .contact__message {
-    margin-bottom: 10px;
+    width: 400px;
+    height: 200px;
+    padding: 10px;
+    margin: 10px;
+    border: 1px solid darkgray;
 }
 
 @media(max-width:440px){
+
+.contact {
+    margin:50px auto;
+}
 
     form > * {
         width: 200px;
@@ -34,5 +61,12 @@ form > * {
         margin: 10px;
         border: 1px solid darkgray;
     }
+
+    .contact__message {
+        height:200px
+    }
     
+    .contact__submit {
+        height:50px
+    }
 }
