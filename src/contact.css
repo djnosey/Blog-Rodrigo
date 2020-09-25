@@ -51,10 +51,26 @@ form {
 @media(max-width:440px){
 
 .contact {
-    margin:50px auto;
+    margin:75px auto;
 }
 
-    form > * {
+    .contact__name {
+        width: 200px;
+        height: 20px;
+        padding: 10px;
+        margin: 10px;
+        border: 1px solid darkgray;
+    }
+
+    .contact__email {
+        width: 200px;
+        height: 20px;
+        padding: 10px;
+        margin: 10px;
+        border: 1px solid darkgray;
+    }
+
+    .contact__subject {
         width: 200px;
         height: 20px;
         padding: 10px;
@@ -63,9 +79,12 @@ form {
     }
 
     .contact__message {
-        height:200px
+        width: 200px;
+        height: 200px;
+        padding: 10px;
+        margin: 10px;
+        border: 1px solid darkgray;
     }
-    
     .contact__submit {
         height:50px
     }
