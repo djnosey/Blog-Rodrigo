@@ -18,43 +18,43 @@ function Table() {
     </tr>
     <tr>
         <td className ="table__td1">1<sup>a</sup></td>
-        <td>institute name</td>
+        <td>GO Associados</td>
     </tr>
     <tr>
         <td>2<sup>a</sup></td>
-        <td>institute name</td>
+        <td><strong>Aviso em Dois Consultoria</strong></td>
     </tr>
     <tr>
         <td>3<sup>a</sup></td>
-        <td>institute name</td>
+        <td>BNP Paribas</td>
     </tr>
     <tr>
         <td>4<sup>a</sup></td>
-        <td>institute name</td>
+        <td>Parallaxis Consultoria Econômica</td>
     </tr>
     <tr>
         <td>5<sup>a</sup></td>
-        <td>institute name</td>
+        <td>Planner Redwood</td>
     </tr>
     <tr>
         <td>6<sup>a</sup></td>
-        <td>institute name</td>
+        <td>Garde Asset</td>
     </tr>
     <tr>
         <td>7<sup>a</sup></td>
-        <td>institute name</td>
+        <td>Claritas</td>
     </tr>
     <tr>
         <td>8<sup>a</sup></td>
-        <td>institute name</td>
+        <td>Barclays</td>
     </tr>
     <tr>
         <td>9<sup>a</sup></td>
-        <td>institute name</td>
+        <td>iCâmara de Dirigentes Lojistas de Porto Alegre</td>
     </tr>
     <tr>
         <td>10<sup>a</sup></td>
-        <td>institute name</td>
+        <td>Verde Asset</td>
     </tr>
     
 

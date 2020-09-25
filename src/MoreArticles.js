@@ -13,7 +13,7 @@ function MoreArticles() {
   }
 
   const list = [];
-  for (let i = 5; i < data.articles.length; i++) {
+  for (let i = 6; i < data.articles.length; i++) {
     list.push(data.articles[i]);
     console.log(list)
   }

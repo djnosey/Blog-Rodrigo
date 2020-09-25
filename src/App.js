@@ -5,8 +5,7 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Navbar from "./Navbar";
 import ArticlePage from "./ArticlePage";
 import Footer from "./Footer";
-import Table from "./Table";
-
+import Contact from "./Contact"
 //BEM
 
 function App() {
@@ -20,11 +19,14 @@ function App() {
         <Route path="/article">
           <ArticlePage />
         </Route>
+        <Route path="/contact">
+          <Contact />
+        </Route>
         <Route path="/">
           <Home />
         </Route>
       </Switch>
-      <Table />
+      
       <Footer />
     </Router>
   );

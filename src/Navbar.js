@@ -47,9 +47,12 @@ function Navbar() {
         </div>
 
         <div className="navbar__button">
+          <Link to= "/contact">
           <Button variant="primary" color="primary">
             Contacto
           </Button>
+          </Link>
+
         </div>
       </div>
       <div className="navbar__box"></div>

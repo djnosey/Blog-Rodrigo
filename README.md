@@ -31,6 +31,8 @@ date : will render on homepage "card" and in the article page
 author : only renders on the article page
 **************************************
 iframe : will render a youtube video in the article page or an empty string for no video (it has to be a url)
+***************************************
+tablemiddle: if "true" is entered it renders the table mid article, else it renders the table at the bottom of article
 **************************************
 headline : will render on homepage "card" and in the article page
 **************************************

@@ -4,7 +4,8 @@ import "./articlepage.css";
 import data from "./data.json";
 import MoreArticles from "./MoreArticles";
 import YouTube from "react-youtube-embed";
-import TwitterFeed from "./TwitterFeed";
+import Table from "./Table";
+import Twitter2 from './Twitter2'
 
 function ArticlePage() {
   const location = useLocation();
@@ -41,9 +42,10 @@ function ArticlePage() {
           <p>{currentCard.paragraph10}</p>
         </div>
         <div className="articlePage__twitter">
-          <TwitterFeed />
+          <Twitter2 />
         </div>
       </div>
+      {currentCard.tablemiddle === "true" ? <Table /> : <div></div>}
 
       {currentCard.secondImage === "" ? (
         <div></div>
@@ -68,7 +70,7 @@ function ArticlePage() {
         <p>{currentCard.paragraph19}</p>
         <p>{currentCard.paragraph20}</p>
       </div>
-
+      {currentCard.tablemiddle !== "true" ? <Table /> : <div></div>}
       <MoreArticles className="articlePage__more" />
     </div>
   );

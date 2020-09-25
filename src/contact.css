@@ -1,0 +1,38 @@
+.contact{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: fit-content;
+    width:100%;
+   margin:100px auto;
+}
+
+form {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form > * {
+    width: 400px;
+    height: 30px;
+    padding: 10px;
+    margin: 10px;
+    border: 1px solid darkgray;
+}
+
+.contact__message {
+    margin-bottom: 10px;
+}
+
+@media(max-width:440px){
+
+    form > * {
+        width: 200px;
+        height: 20px;
+        padding: 10px;
+        margin: 10px;
+        border: 1px solid darkgray;
+    }
+    
+}
