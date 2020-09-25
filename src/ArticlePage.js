@@ -6,7 +6,7 @@ import MoreArticles from "./MoreArticles";
 import YouTube from "react-youtube-embed";
 import TwitterFeed from "./TwitterFeed";
 
-function ArticlePage(props) {
+function ArticlePage() {
   const location = useLocation();
   const params = new URLSearchParams(location.search);
 
@@ -45,19 +45,6 @@ function ArticlePage(props) {
         </div>
       </div>
 
-      <div className="articlepage__paragraphs">
-        <p>{currentCard.paragraph1}</p>
-        <p>{currentCard.paragraph2}</p>
-        <p>{currentCard.paragraph3}</p>
-        <p>{currentCard.paragraph4}</p>
-        <p>{currentCard.paragraph5}</p>
-        <p>{currentCard.paragraph6}</p>
-        <p>{currentCard.paragraph7}</p>
-        <p>{currentCard.paragraph8}</p>
-        <p>{currentCard.paragraph9}</p>
-        <p>{currentCard.paragraph10}</p>
-      </div>
-
       {currentCard.secondImage === "" ? (
         <div></div>
       ) : (
@@ -83,7 +70,6 @@ function ArticlePage(props) {
       </div>
 
       <MoreArticles className="articlePage__more" />
-      
     </div>
   );
 }
