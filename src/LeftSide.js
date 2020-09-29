@@ -5,7 +5,7 @@ import ImageCard from './ImageCard'
 function LeftSide() {
   const imageCardArray = [];
 
-  for (let i = 4; i < 7; i++) {
+  for (let i = 3; i < 6; i++) {
     imageCardArray.push(data.articles[i]);
   }
 

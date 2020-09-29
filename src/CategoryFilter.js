@@ -1,11 +1,8 @@
-import React, {useState} from "react";
-import "./moreArticles.css";
-import data from "./data.json";
-import {Link} from "react-router-dom"
+import React, {useState} from 'react';
 import  { FormControl, InputLabel, MenuItem, Select } from "@material-ui/core";
+import data from './data.json'
 
-
-function MoreArticles(props) {
+function CategoryFilter() {
 
 
 const all = data.articles
@@ -18,21 +15,8 @@ const [category, setcategory] = useState(all)
 const handleChange = (e) => setcategory(e.target.value)
 console.log(category)
 
-  const scrollTop = () => {
-    window.scrollTo({
-      top:0,
-      behaviour:"smooth"
-    });
-  }
 
-
-  
-
-  return (
-    <div className="moreArticles">
-        <h2>More articles</h2>
-
-
+    return (
         <div>
             <FormControl variant="outlined" >
         <InputLabel>Article Category</InputLabel>
@@ -52,19 +36,7 @@ console.log(category)
       </FormControl>
             
         </div>
-
-
-
-
-       
-      <ul>
-        {category.map((item) => (
-          <Link to={`/article?id=${item.id}`} onClick = {scrollTop()}><li id={item.id} key={item.id} >{item.title}</li></Link>
-          
-        ))}
-      </ul>
-    </div>
-  );
+    )
 }
 
-export default MoreArticles;
+export default CategoryFilter

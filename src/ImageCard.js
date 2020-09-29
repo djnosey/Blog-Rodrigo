@@ -1,9 +1,7 @@
 import React from "react";
 import "./imageCard.css";
 import Card from "@material-ui/core/Card";
-import CardActions from "@material-ui/core/CardActions";
 import CardContent from "@material-ui/core/CardContent";
-import Button from "@material-ui/core/Button";
 import Typography from "@material-ui/core/Typography";
 import CardActionArea from "@material-ui/core/CardActionArea";
 import CardMedia from "@material-ui/core/CardMedia";
@@ -15,7 +13,7 @@ function ImageCard(props) {
       <Link to={`/article?id=${props.id}`}>
       <Card>
         <CardActionArea>
-          <CardMedia
+          <CardMedia className = "imageCard__image"
             component="img"
             src={props.image}
             title={props.title}
