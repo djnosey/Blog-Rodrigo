@@ -2,7 +2,7 @@
     background-color: white;
     display: flex;
     flex-direction: column;
-    width: 75%;
+    width: 50%;
     margin: 10px auto 30px auto;
     padding: 20px;
     justify-content: center;
@@ -10,6 +10,10 @@
     border: 1px solid lightgray;
     border-radius: 5px;
   
+}
+
+.moreArticles__selectBox{
+    width:100%;
 }
 
 .moreArticles > h2 {

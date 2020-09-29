@@ -23,6 +23,7 @@ function Home() {
           </div>
         </div>
         <Table />
+        <h2>More articles</h2>
         <MoreArticles />
         
       </div>

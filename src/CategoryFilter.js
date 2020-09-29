@@ -16,7 +16,8 @@ const handleChange = (e) => setcategory(e.target.value)
 console.log(category)
 
 
-    return (
+    return ( 
+        
         <div>
             <FormControl variant="outlined" >
         <InputLabel>Article Category</InputLabel>

@@ -1,21 +1,15 @@
 .articleCard {
     margin: 15px;
+    background-color: lightgray;
+    border:solid 3px rgb(255,236,54) ;
+    max-width: 100px;
+    max-height: 250px;
+    
 
 }
 
-
-.title {
-    width: 100%;
-    padding-bottom: 2px;
-    padding-top: 3px;
-    font-weight: bolder;
-    border-bottom: solid 3px rgb(255,236,54);
-    border-top: solid 3px rgb(255,236,54);
-
-}
-
-.date {
-    padding-top: 10px;
+.articleCard > a {
+    text-decoration: none;
 }
 
 @media(max-width:440px){
