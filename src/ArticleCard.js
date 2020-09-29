@@ -8,11 +8,9 @@ import Typography from "@material-ui/core/Typography";
 import "./ArticleCard.css";
 
 function ArticleCard(props) {
-
   return (
     <div className="articleCard">
-
-      <Card >
+      <Card>
         <CardContent>
           <Typography className="title" variant="h5" component="h2">
             {props.title}

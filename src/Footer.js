@@ -2,11 +2,9 @@ import React from "react";
 import "./footer.css";
 import YouTubeIcon from "@material-ui/icons/YouTube";
 import LinkedInIcon from "@material-ui/icons/LinkedIn";
-import EmailIcon from '@material-ui/icons/Email';
-import PhoneIphoneIcon from '@material-ui/icons/PhoneIphone';
-import TwitterIcon from '@material-ui/icons/Twitter';
-
-
+import EmailIcon from "@material-ui/icons/Email";
+import PhoneIphoneIcon from "@material-ui/icons/PhoneIphone";
+import TwitterIcon from "@material-ui/icons/Twitter";
 
 function Footer() {
   return (
@@ -17,47 +15,54 @@ function Footer() {
         </div>
 
         <div>
-            <a target ="_blank" rel="noopener noreferrer" href ="https://www.youtube.com/channel/UClXOb1IQs4AIQZI4BqNMGZg">
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://www.youtube.com/channel/UClXOb1IQs4AIQZI4BqNMGZg"
+          >
             <YouTubeIcon
-            color="primary"
-            fontSize="large"
-            className="footer__youtube"
-          />
-
-            </a>
-          <a target ="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/groups/8308917/">
-          <LinkedInIcon
-            color="primary"
-            fontSize="large"
-            className="footer__linkedin"
-          />
-
+              color="primary"
+              fontSize="large"
+              className="footer__youtube"
+            />
+          </a>
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://www.linkedin.com/groups/8308917/"
+          >
+            <LinkedInIcon
+              color="primary"
+              fontSize="large"
+              className="footer__linkedin"
+            />
           </a>
 
-          <a target ="_blank" rel="noopener noreferrer" href="https://twitter.com/avisoemdois">
-          <TwitterIcon
-            color="primary"
-            fontSize="large"
-            className="footer__twitter"
-          />
-
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://twitter.com/avisoemdois"
+          >
+            <TwitterIcon
+              color="primary"
+              fontSize="large"
+              className="footer__twitter"
+            />
           </a>
-         
         </div>
       </div>
       <div className="footer__contact">
-          <div>
-              <h4>contact</h4>
-          </div>
-          <div className ="footer__email">
-              <EmailIcon />
-              <p>email@email.com</p>
-          </div>
-          <div className ="footer__phone">
-              <PhoneIphoneIcon />
-              <p>0123-456-789</p>
-          </div>
-
+        <div>
+          <h4>contact</h4>
+        </div>
+        <div className="footer__email">
+          <EmailIcon />
+          <p>email@email.com</p>
+        </div>
+        <div className="footer__phone">
+          <PhoneIphoneIcon />
+          <p>0123-456-789</p>
+        </div>
       </div>
     </div>
   );

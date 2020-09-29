@@ -1,31 +1,25 @@
-import React from 'react'
-import data from "./data.json"
-import ImageCard from "./ImageCard"
-
+import React from "react";
+import data from "./data.json";
+import ImageCard from "./ImageCard";
 
 function Center() {
-    const imageCardArray =[];
+  const imageCardArray = [];
 
-    for(let i = 0 ;i<3;i++){
-        imageCardArray.push(data.articles[i])
-    }
+  for (let i = 0; i < 3; i++) {
+    imageCardArray.push(data.articles[i]);
+  }
 
-    const featuredArticles = imageCardArray.map(elem => <ImageCard 
-        title={elem.title}
-        headline = {elem.headline} 
-        image= {elem.image}
-        key = {elem.id}
-        id = {elem.id}
-        
-        />)
-   
+  const featuredArticles = imageCardArray.map((elem) => (
+    <ImageCard
+      title={elem.title}
+      headline={elem.headline}
+      image={elem.image}
+      key={elem.id}
+      id={elem.id}
+    />
+  ));
 
-    return (
-        <div className ="center">
-{featuredArticles}
-        </div>
-       
-    )
+  return <div className="center">{featuredArticles}</div>;
 }
 
-export default Center
+export default Center;

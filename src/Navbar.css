@@ -22,7 +22,7 @@
   overflow: visible;
   z-index: 2;
   position: relative;
-  bottom:40px;
+  bottom: 40px;
 }
 
 .navbar__title {
@@ -80,10 +80,6 @@
   );
 }
 
-
-
-
-
 @media (max-width: 440px) {
   .navbar {
     height: 80px;
@@ -91,24 +87,21 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom : 20px;
+    margin-bottom: 20px;
   }
 
   .navbar__container {
     width: 100%;
   }
- 
 
   .navbar__box {
     display: none;
   }
 
-  .navbar__logo  {
+  .navbar__logo {
     margin-top: 0;
     height: 70px !important;
     width: 70px !important;
-    bottom:20px;
-    
+    bottom: 20px;
   }
-
 }

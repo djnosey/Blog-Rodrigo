@@ -5,7 +5,7 @@ import data from "./data.json";
 import MoreArticles from "./MoreArticles";
 import YouTube from "react-youtube-embed";
 import Table from "./Table";
-import Twitter2 from './Twitter2'
+import Twitter2 from "./Twitter2";
 
 function ArticlePage() {
   const location = useLocation();

@@ -1,22 +1,20 @@
-.imageCard  {
-    margin-top: 15px;
-    margin-right: 15px;
-    border-bottom: 1px solid lightgray;
-    
+.imageCard {
+  margin-top: 15px;
+  margin-right: 15px;
+  border-bottom: 1px solid lightgray;
 }
 
-.imageCard__image{
-    max-height: 200px;
+.imageCard__image {
+  max-height: 200px;
 }
 
 .imageCard > a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
-@media(max-width:440px){
-    .imageCard{
-        border: 1px solid lightgray;
-        border-radius: 4px;
-    }
+@media (max-width: 440px) {
+  .imageCard {
+    border: 1px solid lightgray;
+    border-radius: 4px;
+  }
 }
-

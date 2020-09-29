@@ -1,91 +1,87 @@
-.contact{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    height: fit-content;
-    width:100%;
-   margin:60px auto;
+.contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: fit-content;
+  width: 100%;
+  margin: 60px auto;
 }
 
 form {
-    display:flex;
-    flex-direction: column;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.contact__name{
-    width: 400px;
-    height: 30px;
-    padding: 10px;
-    margin: 10px;
-    border: 1px solid darkgray;
-
+.contact__name {
+  width: 400px;
+  height: 30px;
+  padding: 10px;
+  margin: 10px;
+  border: 1px solid darkgray;
 }
 
-.contact__email{
-    width: 400px;
-    height: 30px;
-    padding: 10px;
-    margin: 10px;
-    border: 1px solid darkgray;
-
+.contact__email {
+  width: 400px;
+  height: 30px;
+  padding: 10px;
+  margin: 10px;
+  border: 1px solid darkgray;
 }
 
 .contact__subject {
-    width: 400px;
-    height: 30px;
-    padding: 10px;
-    margin: 10px;
-    border: 1px solid darkgray;
-
+  width: 400px;
+  height: 30px;
+  padding: 10px;
+  margin: 10px;
+  border: 1px solid darkgray;
 }
 
 .contact__message {
-    width: 400px;
+  width: 400px;
+  height: 200px;
+  padding: 10px;
+  margin: 10px;
+  border: 1px solid darkgray;
+}
+
+@media (max-width: 440px) {
+  .contact {
+    margin: 75px auto;
+  }
+
+  .contact__name {
+    width: 200px;
+    height: 20px;
+    padding: 10px;
+    margin: 10px;
+    border: 1px solid darkgray;
+  }
+
+  .contact__email {
+    width: 200px;
+    height: 20px;
+    padding: 10px;
+    margin: 10px;
+    border: 1px solid darkgray;
+  }
+
+  .contact__subject {
+    width: 200px;
+    height: 20px;
+    padding: 10px;
+    margin: 10px;
+    border: 1px solid darkgray;
+  }
+
+  .contact__message {
+    width: 200px;
     height: 200px;
     padding: 10px;
     margin: 10px;
     border: 1px solid darkgray;
-}
-
-@media(max-width:440px){
-
-.contact {
-    margin:75px auto;
-}
-
-    .contact__name {
-        width: 200px;
-        height: 20px;
-        padding: 10px;
-        margin: 10px;
-        border: 1px solid darkgray;
-    }
-
-    .contact__email {
-        width: 200px;
-        height: 20px;
-        padding: 10px;
-        margin: 10px;
-        border: 1px solid darkgray;
-    }
-
-    .contact__subject {
-        width: 200px;
-        height: 20px;
-        padding: 10px;
-        margin: 10px;
-        border: 1px solid darkgray;
-    }
-
-    .contact__message {
-        width: 200px;
-        height: 200px;
-        padding: 10px;
-        margin: 10px;
-        border: 1px solid darkgray;
-    }
-    .contact__submit {
-        height:50px
-    }
+  }
+  .contact__submit {
+    height: 50px;
+  }
 }

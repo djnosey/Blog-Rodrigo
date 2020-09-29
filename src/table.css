@@ -1,40 +1,34 @@
 .table {
-    margin: 20px auto;
-    border-bottom: solid 3px rgb(255,236,54);
-    border-top: solid 3px rgb(255,236,54);
+  margin: 20px auto;
+  border-bottom: solid 3px rgb(255, 236, 54);
+  border-top: solid 3px rgb(255, 236, 54);
 
-    padding: 20px;
-    width: 90%;
-    border-radius: 4px;
-
-
+  padding: 20px;
+  width: 90%;
+  border-radius: 4px;
 }
 
 .table__caption {
-    text-align: left;
-    border-bottom: solid 3px rgb(255,236,54);
-    padding:5px 0 10px 0;
-    margin-bottom: 15px;
+  text-align: left;
+  border-bottom: solid 3px rgb(255, 236, 54);
+  padding: 5px 0 10px 0;
+  margin-bottom: 15px;
 }
 
 .table__head {
-    text-align: left;
-    padding: 10px 0 10px 0 ;
-
+  text-align: left;
+  padding: 10px 0 10px 0;
 }
-
 
 td {
-    border-bottom: 1px solid darkgrey;
-    padding : 5px 0 5px 0;
-
+  border-bottom: 1px solid darkgrey;
+  padding: 5px 0 5px 0;
 }
 
-@media (max-width:440px) {
-    .table {
-        margin: 20px 10px;
-        border-bottom: solid 3px rgb(255,236,54);
-        padding-bottom: 20px;
-    
-    }
+@media (max-width: 440px) {
+  .table {
+    margin: 20px 10px;
+    border-bottom: solid 3px rgb(255, 236, 54);
+    padding-bottom: 20px;
+  }
 }

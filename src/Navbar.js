@@ -23,8 +23,11 @@ function Navbar() {
               className="navbar__youtube"
             />
           </a>
-          <a target="_blank"
-          rel="noopener noreferrer" href="https://www.linkedin.com/groups/8308917/">
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://www.linkedin.com/groups/8308917/"
+          >
             <LinkedInIcon
               color="secondary"
               fontSize="default"
@@ -32,7 +35,11 @@ function Navbar() {
             />
           </a>
 
-          <a target="_blank" rel="noopener noreferrer" href="https://twitter.com/avisoemdois">
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://twitter.com/avisoemdois"
+          >
             <TwitterIcon
               color="secondary"
               fontSize="default"
@@ -47,12 +54,11 @@ function Navbar() {
         </div>
 
         <div className="navbar__button">
-          <Link to= "/contact">
-          <Button variant="primary" color="primary">
-            Contacto
-          </Button>
+          <Link to="/contact">
+            <Button variant="primary" color="primary">
+              Contacto
+            </Button>
           </Link>
-
         </div>
       </div>
       <div className="navbar__box"></div>

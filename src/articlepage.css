@@ -6,11 +6,11 @@
   align-items: center;
 }
 
-.articlePage__top{
+.articlePage__top {
   display: flex;
 }
 
-.articlePage__twitter{
+.articlePage__twitter {
   border: 1px solid lightgray;
   margin: 10px;
   height: fit-content;
@@ -30,7 +30,6 @@
   margin-bottom: 5px;
   padding-bottom: 5px;
   align-self: flex-start;
-
 }
 .articlepage > h4 {
   align-self: flex-start;
@@ -39,8 +38,7 @@
   padding-bottom: 10px;
   margin-bottom: 10px;
 
-  border-bottom: solid 3px rgb(255,236,54);
-
+  border-bottom: solid 3px rgb(255, 236, 54);
 }
 .articlepage > h3 {
   width: fit-content;
@@ -48,30 +46,27 @@
   margin-left: 16px;
 
   margin-bottom: 30px;
-  border-bottom: solid 3px rgb(255,236,54);
+  border-bottom: solid 3px rgb(255, 236, 54);
   align-self: flex-start;
-
-
 }
 
 .articlepage__paragraphs {
-  font-family:  Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-family: Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+    sans-serif;
   margin: 10px auto;
   border-radius: 3px;
   background-color: white;
   padding: 20px 10px;
-
-  
 }
 
-.articlepage__paragraphs >p {
+.articlepage__paragraphs > p {
   margin-left: 60px;
   line-height: 1.5em;
   margin-right: 60px;
   margin-bottom: 10px;
 }
 
-.articlePage__more{
+.articlePage__more {
   margin-top: 100px;
 }
 
@@ -79,48 +74,42 @@
   width: 50%;
 }
 
-@media (max-width:440px){
+@media (max-width: 440px) {
   .articlePage__twitter {
     display: none;
     width: 100%;
-}
+  }
 
-.articlepage__paragraphs {
-  margin: 0;
-  border-radius: 3px;
-  background-color: white;
-  padding: 0;
-}
+  .articlepage__paragraphs {
+    margin: 0;
+    border-radius: 3px;
+    background-color: white;
+    padding: 0;
+  }
 
-.articlepage__paragraphs >p {
+  .articlepage__paragraphs > p {
+    margin-left: auto;
+    line-height: 1.5em;
+    margin-right: auto;
+    margin-bottom: 10px;
+  }
 
-  margin-left: auto;
-  line-height: 1.5em;
-  margin-right: auto;
-  margin-bottom: 10px;
+  .articlepage > h1 {
+    width: 100%;
+    margin: auto;
+  }
+  .articlepage > h4 {
+    align-self: flex-start;
+    margin: auto;
+    color: darkgray;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
 
-}
-
-.articlepage > h1 {
-  width: 100%;
-  margin: auto;
-
-
-}
-.articlepage > h4 {
-  align-self: flex-start;
-  margin:auto;
-  color: darkgray;
-  padding-bottom: 10px;
-  margin-bottom: 10px;
-
-  border-bottom: solid 3px rgb(255,236,54);
-
-}
-.articlepage > h3 {
-  width: fit-content;
-  padding-bottom: 10px;
-  margin:auto}
-
-
+    border-bottom: solid 3px rgb(255, 236, 54);
+  }
+  .articlepage > h3 {
+    width: fit-content;
+    padding-bottom: 10px;
+    margin: auto;
+  }
 }

@@ -1,6 +1,6 @@
 import React from "react";
 import data from "./data.json";
-import ImageCard from './ImageCard'
+import ImageCard from "./ImageCard";
 
 function LeftSide() {
   const imageCardArray = [];
@@ -16,7 +16,7 @@ function LeftSide() {
       headline={elem.headline}
       key={elem.id}
       id={elem.id}
-      image = {elem.image}
+      image={elem.image}
     />
   ));
 

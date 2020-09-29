@@ -1,24 +1,18 @@
 .articleCard {
-    margin: 15px;
-    background-color: lightgray;
-    border:solid 3px rgb(255,236,54) ;
-    max-width: 100px;
-    max-height: 250px;
-    
-
+  margin: 15px;
+  background-color: lightgray;
+  border: solid 3px rgb(255, 236, 54);
+  max-width: 100px;
+  max-height: 250px;
 }
 
 .articleCard > a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
-@media(max-width:440px){
-    .articleCard {
-        border: 1px solid lightgray;
-        border-radius: 4px;
-    }
+@media (max-width: 440px) {
+  .articleCard {
+    border: 1px solid lightgray;
+    border-radius: 4px;
+  }
 }
-
-
-
-

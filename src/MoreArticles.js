@@ -4,7 +4,7 @@ import data from "./data.json";
 import { Link } from "react-router-dom";
 import { FormControl, InputLabel, MenuItem, Select } from "@material-ui/core";
 import ArticleCard from "./ArticleCard";
-import ImageCard from "./ImageCard"
+import ImageCard from "./ImageCard";
 
 function MoreArticles(props) {
   const all = data.articles;
@@ -26,8 +26,8 @@ function MoreArticles(props) {
 
   return (
     <div className="moreArticles">
-
-      <div className ="moreArticles__selectBox">
+      <h2>More articles</h2>
+      <div className="moreArticles__selectBox">
         <FormControl color="secondary" fullWidth="true" variant="outlined">
           <InputLabel>Article Category</InputLabel>
           <Select value={category} onChange={handleChange} label="All">
@@ -48,10 +48,7 @@ function MoreArticles(props) {
               headline={item.title}
               id={item.id}
               key={item.id}
-              
-            >
-              {item.title}
-            </ImageCard>
+            ></ImageCard>
           </Link>
         ))}
       </ul>

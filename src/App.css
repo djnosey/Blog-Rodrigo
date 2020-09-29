@@ -24,10 +24,9 @@
 }
 
 .app__line {
-  border-right: solid 3px rgb(255,236,54);
+  border-right: solid 3px rgb(255, 236, 54);
   margin-right: 20px;
   opacity: 0.5;
-
 }
 
 .app__right {
@@ -40,7 +39,6 @@
   flex-direction: column;
   border-radius: 4px;
   margin-top: 15px;
-
 }
 
 .backgroundimage {
@@ -84,8 +82,8 @@ h2 {
     flex-direction: column;
     width: 105%;
     align-items: center;
-    margin:0 auto;
-    padding:0;
+    margin: 0 auto;
+    padding: 0;
   }
 
   .app__center {
