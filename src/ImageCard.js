@@ -12,6 +12,7 @@ import {Link} from "react-router-dom"
 function ImageCard(props) {
   return (
     <div className="imageCard">
+      <Link to={`/article?id=${props.id}`}>
       <Card>
         <CardActionArea>
           <CardMedia
@@ -28,11 +29,9 @@ function ImageCard(props) {
             </Typography>
           </CardContent>
         </CardActionArea>
-        <CardActions>
-          <Button size="small" varient="outlined">
-          <Link to={`/article?id=${props.id}`}>Artigo completo</Link>          </Button>
-        </CardActions>
+       
       </Card>
+      </Link>
     </div>
   );
 }

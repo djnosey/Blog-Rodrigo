@@ -1,7 +1,16 @@
-.imageCard {
+.imageCard  {
     margin-top: 15px;
     margin-right: 15px;
+    border-bottom: 1px solid lightgray;
     
+}
+
+.imageCard__image{
+    max-height: 200px;
+}
+
+.imageCard > a {
+    text-decoration: none;
 }
 
 @media(max-width:440px){
