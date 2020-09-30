@@ -53,7 +53,7 @@ class Contact extends React.Component {
             className="contact__submit"
             type="submit"
             variant="outlined"
-            color="primary"
+            color="secondary"
           >
             send message
           </Button>

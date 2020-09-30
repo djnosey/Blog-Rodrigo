@@ -17,6 +17,7 @@ function ImageCard(props) {
               className="imageCard__image"
               component="img"
               src={props.image}
+              alt = {props.title}
               title={props.title}
             />
             <CardContent>

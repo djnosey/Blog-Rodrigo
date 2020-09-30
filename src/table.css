@@ -8,6 +8,10 @@
   border-radius: 4px;
 }
 
+table caption {
+  caption-side: top;
+}
+
 .table__caption {
   text-align: left;
   border-bottom: solid 3px rgb(255, 236, 54);

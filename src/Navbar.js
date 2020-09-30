@@ -55,7 +55,7 @@ function Navbar() {
 
         <div className="navbar__button">
           <Link to="/contact">
-            <Button variant="primary" color="primary">
+            <Button variant="outlined" color="secondary">
               Contacto
             </Button>
           </Link>
