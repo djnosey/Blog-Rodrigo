@@ -1,20 +1,28 @@
-.newArticlePage > div > h1 {
-    width: 40%;
-    margin-bottom: 5px;
-    margin-top: 10px;
-    padding-bottom: 5px; }
+.newArticlePage > div > div > h1 {
+  margin-bottom: 5px;
+  margin-top: 10px;
+  padding-bottom: 5px;
+}
 
-    .newArticlePage > div > h4 {
-        color: darkgray;
-        padding-bottom: 10px;
-        margin-bottom: 10px;
-        border-bottom: solid 3px rgb(255, 236, 54);
-      }
+.newArticlePage > div > div > h4 {
+  color: darkgray;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+  border-bottom: solid 3px rgb(255, 236, 54);
+}
 
-      .newArticlePage > div>  h3 {
-        padding-bottom: 10px;      
-        margin-bottom: 30px;
-        border-bottom: solid 3px rgb(255, 236, 54);
-      }
+.newArticlePage > div > div > h3 {
+  padding-bottom: 10px;
+  margin-bottom: 30px;
+  border-bottom: solid 3px rgb(255, 236, 54);
+}
 
-    
+.paragraphs {
+  margin-top: 10px;
+}
+
+@media (max-width: 440px) {
+  .twitter {
+    display: none;
+  }
+}

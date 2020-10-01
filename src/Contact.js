@@ -20,7 +20,8 @@ class Contact extends React.Component {
   render() {
     return (
       <div className="contact">
-        <h2>Thank you for contacting</h2>
+        <h2>
+Obrigado por contactar</h2>
 
         <form onSubmit={this.handleLogin}>
           <input

@@ -32,15 +32,18 @@
   justify-content: space-evenly;
   align-items: center;
   list-style: none;
+  
 }
 
 
 
 .moreArticles > ul > a > li {
-  padding: -10px;
   text-decoration: none;
   text-align: center;
-  border: 1px solid lightgray;
+  color: black;
+  font-size: 18px;
+  margin: 10px;
+  padding: 10px;
 
 }
 

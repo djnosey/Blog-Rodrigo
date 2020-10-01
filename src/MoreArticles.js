@@ -25,7 +25,7 @@ function MoreArticles(props) {
 
   return (
     <div className="moreArticles">
-      <h2>More articles</h2>
+      <h2>Mais artigos</h2>
       <div className="moreArticles__selectBox">
         <FormControl color="secondary" fullWidth = {true} >
           <InputLabel>Article Category</InputLabel>
@@ -42,13 +42,10 @@ function MoreArticles(props) {
 
       <ul>
         {category.map((item) => (
+
+
           <Link to={`/article?id=${item.id}`} onClick={scrollTop()}>
-            <ImageCard
-           
-              headline={item.title}
-              id={item.id}
-              key={item.id}
-            ></ImageCard>
+<li><strong>{item.title}</strong></li>
           </Link>
         ))}
       </ul>

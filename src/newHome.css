@@ -5,3 +5,37 @@
 .main_home {
   margin-top: 50px;
 }
+
+@media (max-width:440px) {
+
+  .container {
+
+  }
+
+.main_home {
+
+}
+
+  .toprow{
+    display: grid;
+    margin: 0;
+    padding: 0;
+    
+  }
+  .col1{
+    order: 2;
+    border: none;
+    margin: 0;
+    padding: 0;
+
+  }
+  .col2 {
+    order: 1;
+    border: none;
+    margin: 0;
+    padding: 0;
+  }
+  .col3 {
+    order: 3;
+  }
+}

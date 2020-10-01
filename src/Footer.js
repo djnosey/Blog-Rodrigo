@@ -11,7 +11,7 @@ function Footer() {
     <div className="footer">
       <div className="footer__social">
         <div>
-          <h4>siga-nos nas redes sociais</h4>
+          <h4>Siga-nos nas redes sociais</h4>
         </div>
 
         <div>
@@ -53,7 +53,7 @@ function Footer() {
       </div>
       <div className="footer__contact">
         <div>
-          <h4>contact</h4>
+          <h4>Contacto</h4>
         </div>
         <div className="footer__email">
           <EmailIcon />

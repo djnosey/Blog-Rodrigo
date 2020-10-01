@@ -1,6 +1,5 @@
 import React from "react";
 import { useLocation } from "react-router-dom";
-import "./articlepage.css";
 import data from "./data.json";
 import MoreArticles from "./MoreArticles";
 import YouTube from "react-youtube-embed";
@@ -22,25 +21,39 @@ function NewArticlePage() {
   return (
     <Container className = "newArticlePage">
       <Row>
+        <Col>
         {currentCard.image === "" ? (
           <div></div>
         ) : (
           <Image src={currentCard.image} alt={currentCard.title} fluid />
         )}
+        </Col>
+
       </Row>
+
       <Row>
+        <Col>
         <h1>{currentCard.title}</h1>
+        </Col>
       </Row>
+      
+      
+      
+
       <Row>
+        <Col>
         <h4>
           Publicado em {currentCard.date} por {currentCard.author}
         </h4>
+        </Col>
       </Row>
       <Row>
+        <Col>
         <h3>{currentCard.headline}</h3>
+        </Col>
       </Row>
       <Row>
-        <Col xs={12} sm={8} md={8} lg={8} xl={8}>
+        <Col className="paragraphs" xs={12} sm={8} md={8} lg={8} xl={8}>
           <p>{currentCard.paragraph1}</p>
           <p>{currentCard.paragraph2}</p>
           <p>{currentCard.paragraph3}</p>
@@ -52,7 +65,7 @@ function NewArticlePage() {
           <p>{currentCard.paragraph9}</p>
           <p>{currentCard.paragraph10}</p>
         </Col>
-        <Col xs={4} sm={4} md={4} lg={4} xl={4}>
+        <Col className="twitter" xs={4} sm={4} md={4} lg={4} xl={4}>
           <Twitter2 />
         </Col>
       </Row>
@@ -72,7 +85,8 @@ function NewArticlePage() {
         )}
       </Row>
       <Row>
-      <p>{currentCard.paragraph11}</p>
+        <Col className="paragraphs">
+        <p>{currentCard.paragraph11}</p>
         <p>{currentCard.paragraph12}</p>
         <p>{currentCard.paragraph13}</p>
         <p>{currentCard.paragraph14}</p>
@@ -82,6 +96,8 @@ function NewArticlePage() {
         <p>{currentCard.paragraph18}</p>
         <p>{currentCard.paragraph19}</p>
         <p>{currentCard.paragraph20}</p>
+        </Col>
+
       </Row>
       <Row>
       {currentCard.tablemiddle !== "true" ? <Table /> : <div></div>}
