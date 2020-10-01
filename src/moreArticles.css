@@ -14,14 +14,13 @@
   box-shadow: 0px -4px 19px -4px rgba(224, 224, 224, 1);
 }
 
-div > .more__head{
+div > .more__head {
   display: flex;
   justify-content: space-between;
   width: 90%;
   height: max-content;
   margin-top: 5px;
 }
-
 
 .more__head > h3 {
   margin: 7px 0 15px 0;
@@ -30,20 +29,15 @@ div > .more__head{
   width: 60%;
 }
 
-
-
 .moreArticles > ul {
   margin: 10px 7px;
   padding: 6px;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   list-style: none;
-  
 }
-
-
 
 .moreArticles > ul > a > li {
   text-decoration: none;
@@ -51,8 +45,14 @@ div > .more__head{
   color: black;
   font-size: 18px;
   margin: 5px;
-  padding: 5px;
+  padding: 10px 20px;
+  border-radius: 6px;
+}
 
+.moreArticles > ul > a > li:hover {
+  -webkit-box-shadow: 0px -4px 19px -4px rgba(224, 224, 224, 1);
+  -moz-box-shadow: 0px -4px 19px -4px rgba(224, 224, 224, 1);
+  box-shadow: 0px -4px 19px -4px rgba(224, 224, 224, 1);
 }
 
 @media (max-width: 440px) {

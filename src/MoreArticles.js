@@ -4,6 +4,18 @@ import data from "./data.json";
 import { Link } from "react-router-dom";
 import { FormControl, InputLabel, MenuItem, Select } from "@material-ui/core";
 
+/* 
+
+loops through the data.json and creates 4 arrays filtered by key: category in the data.json
+(named all ,one, two and three)
+
+state was needed (named "category") to make the dropdown filter work, state is updated in 
+handleChange function which targets the 
+"value" property of the dropdown menu, which then corresponds to the array names.
+Then it maps through the selected array and displays those articles. <ul>category.map()</ul>
+
+*/
+
 function MoreArticles() {
   const all = data.articles;
   const one = data.articles.filter((item) => item.category === "1");
@@ -13,7 +25,6 @@ function MoreArticles() {
   const [category, setcategory] = useState(one);
 
   const handleChange = (e) => setcategory(e.target.value);
-  console.log(category);
 
   const scrollTop = () => {
     window.scrollTo({
@@ -33,7 +44,6 @@ function MoreArticles() {
             value={category}
             onChange={handleChange}
             label="All"
-            variant="outlined"
             fullWidth={true}
           >
             <MenuItem value={all}>

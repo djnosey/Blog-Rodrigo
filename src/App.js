@@ -4,15 +4,13 @@ import Navbar from "./Navbar";
 import Footer from "./Footer";
 import Contact from "./Contact";
 import NewHome from "./NewHome";
-import NewArticlePage from "./NewArticlePage"
+import NewArticlePage from "./NewArticlePage";
 //BEM
 
 function App() {
   return (
     <Router>
       <Navbar />
-
-      
 
       <Switch>
         <Route path="/article">
@@ -22,7 +20,7 @@ function App() {
           <Contact />
         </Route>
         <Route path="/">
-        <NewHome />
+          <NewHome />
         </Route>
       </Switch>
 
