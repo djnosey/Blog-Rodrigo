@@ -8,8 +8,8 @@ import Twitter2 from "./Twitter2";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
-import Image from "react-bootstrap/Image"
-import "./newArticlePage.css"
+import Image from "react-bootstrap/Image";
+import "./newArticlePage.css";
 
 function NewArticlePage() {
   const location = useLocation();
@@ -19,37 +19,33 @@ function NewArticlePage() {
     data.articles.filter((card) => card.id === params.get("id"))[0] || {};
 
   return (
-    <Container className = "newArticlePage">
+    <Container className="newArticlePage">
       <Row>
         <Col>
-        {currentCard.image === "" ? (
-          <div></div>
-        ) : (
-          <Image src={currentCard.image} alt={currentCard.title} fluid />
-        )}
+          {currentCard.image === "" ? (
+            <div></div>
+          ) : (
+            <Image src={currentCard.image} alt={currentCard.title} fluid />
+          )}
         </Col>
+      </Row>
 
+      <Row>
+        <Col>
+          <h1>{currentCard.title}</h1>
+        </Col>
       </Row>
 
       <Row>
         <Col>
-        <h1>{currentCard.title}</h1>
-        </Col>
-      </Row>
-      
-      
-      
-
-      <Row>
-        <Col>
-        <h4>
-          Publicado em {currentCard.date} por {currentCard.author}
-        </h4>
+          <h4>
+            Publicado em {currentCard.date} por {currentCard.author}
+          </h4>
         </Col>
       </Row>
       <Row>
         <Col>
-        <h3>{currentCard.headline}</h3>
+          <h3>{currentCard.headline}</h3>
         </Col>
       </Row>
       <Row>
@@ -71,41 +67,42 @@ function NewArticlePage() {
       </Row>
 
       <Row>
-        {currentCard.tablemiddle === "true" ? <Table /> : <div></div>}
+        <Col>
+          {currentCard.tablemiddle === "true" ? <Table /> : <div></div>}
 
-        {currentCard.secondImage === "" ? (
-          <div></div>
-        ) : (
-          <Image alt={currentCard.title} src={currentCard.secondImage} fluid />
-        )}
-        {currentCard.iframe === "" ? (
-          <div></div>
-        ) : (
-          <YouTube className="ariclePage__video" id={currentCard.iframe} />
-        )}
+          {currentCard.secondImage === "" ? (
+            <div></div>
+          ) : (
+            <Image
+              alt={currentCard.title}
+              src={currentCard.secondImage}
+              fluid
+            />
+          )}
+          {currentCard.iframe === "" ? (
+            <div></div>
+          ) : (
+            <YouTube className="ariclePage__video" id={currentCard.iframe} />
+          )}
+        </Col>
       </Row>
       <Row>
         <Col className="paragraphs">
-        <p>{currentCard.paragraph11}</p>
-        <p>{currentCard.paragraph12}</p>
-        <p>{currentCard.paragraph13}</p>
-        <p>{currentCard.paragraph14}</p>
-        <p>{currentCard.paragraph15}</p>
-        <p>{currentCard.paragraph16}</p>
-        <p>{currentCard.paragraph17}</p>
-        <p>{currentCard.paragraph18}</p>
-        <p>{currentCard.paragraph19}</p>
-        <p>{currentCard.paragraph20}</p>
+          <p>{currentCard.paragraph11}</p>
+          <p>{currentCard.paragraph12}</p>
+          <p>{currentCard.paragraph13}</p>
+          <p>{currentCard.paragraph14}</p>
+          <p>{currentCard.paragraph15}</p>
+          <p>{currentCard.paragraph16}</p>
+          <p>{currentCard.paragraph17}</p>
+          <p>{currentCard.paragraph18}</p>
+          <p>{currentCard.paragraph19}</p>
+          <p>{currentCard.paragraph20}</p>
         </Col>
-
       </Row>
+      <Row>{currentCard.tablemiddle !== "true" ? <Table /> : <div></div>}</Row>
       <Row>
-      {currentCard.tablemiddle !== "true" ? <Table /> : <div></div>}
-
-      </Row>
-      <Row>
-      <MoreArticles className="articlePage__more" />
-
+        <MoreArticles className="articlePage__more" />
       </Row>
     </Container>
   );

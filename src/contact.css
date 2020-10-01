@@ -7,6 +7,12 @@
   margin: 60px auto;
 }
 
+.contact > h2 {
+  border-bottom:solid 3px rgb(255, 236, 54) ;
+
+  margin-bottom: 20px;
+}
+
 form {
   display: flex;
   flex-direction: column;
@@ -50,9 +56,13 @@ form {
     margin: 75px auto;
   }
 
+  .contact >h2 {
+    margin-top: -50px;
+  }
+
   .contact__name {
     width: 200px;
-    height: 20px;
+    height: 30px;
     padding: 10px;
     margin: 10px;
     border: 1px solid darkgray;
@@ -60,7 +70,7 @@ form {
 
   .contact__email {
     width: 200px;
-    height: 20px;
+    height: 30px;
     padding: 10px;
     margin: 10px;
     border: 1px solid darkgray;
@@ -68,7 +78,7 @@ form {
 
   .contact__subject {
     width: 200px;
-    height: 20px;
+    height: 30px;
     padding: 10px;
     margin: 10px;
     border: 1px solid darkgray;

@@ -3,9 +3,8 @@ import "./moreArticles.css";
 import data from "./data.json";
 import { Link } from "react-router-dom";
 import { FormControl, InputLabel, MenuItem, Select } from "@material-ui/core";
-import ImageCard from "./ImageCard";
 
-function MoreArticles(props) {
+function MoreArticles() {
   const all = data.articles;
   const one = data.articles.filter((item) => item.category === "1");
   const two = data.articles.filter((item) => item.category === "2");
@@ -25,27 +24,34 @@ function MoreArticles(props) {
 
   return (
     <div className="moreArticles">
-      <h2>Mais artigos</h2>
-      <div className="moreArticles__selectBox">
-        <FormControl color="secondary" fullWidth = {true} >
-          <InputLabel>Article Category</InputLabel>
-          <Select value={category} onChange={handleChange} label="All">
+      <div className="more__head">
+        <h3><strong>Mais artigos</strong></h3>
+
+        <FormControl color="primary">
+          <InputLabel><small>Categoria de artigo</small></InputLabel>
+          <Select
+            value={category}
+            onChange={handleChange}
+            label="All"
+            variant="outlined"
+            fullWidth={true}
+          >
             <MenuItem value={all}>
-              <em>All</em>
+              <em><small>All</small></em>
             </MenuItem>
-            <MenuItem value={one}>Economics one</MenuItem>
-            <MenuItem value={two}>Economics Two</MenuItem>
-            <MenuItem value={three}>Economics Three</MenuItem>
+            <MenuItem value={one}><small>Economics one</small></MenuItem>
+            <MenuItem value={two}><small>Economics Two</small></MenuItem>
+            <MenuItem value={three}><small>Economics Three</small></MenuItem>
           </Select>
         </FormControl>
       </div>
 
       <ul>
         {category.map((item) => (
-
-
           <Link to={`/article?id=${item.id}`} onClick={scrollTop()}>
-<li><strong>{item.title}</strong></li>
+            <li>
+              {item.title}
+            </li>
           </Link>
         ))}
       </ul>

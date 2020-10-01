@@ -6,7 +6,6 @@ import TwitterFeed from './TwitterFeed'
 import Container from 'react-bootstrap/Container'
 import Row from "react-bootstrap/Row"
 import Col from "react-bootstrap/Col"
-import Navbar from './Navbar'
 import Table from './Table'
 import MoreArticles from './MoreArticles'
 import './newHome.css'
