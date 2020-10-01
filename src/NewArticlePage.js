@@ -9,6 +9,8 @@ import Twitter2 from "./Twitter2";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
+import Image from "react-bootstrap/Image"
+import "./newArticlePage.css"
 
 function NewArticlePage() {
   const location = useLocation();
@@ -18,12 +20,12 @@ function NewArticlePage() {
     data.articles.filter((card) => card.id === params.get("id"))[0] || {};
 
   return (
-    <Container>
+    <Container className = "newArticlePage">
       <Row>
         {currentCard.image === "" ? (
           <div></div>
         ) : (
-          <img src={currentCard.image} alt={currentCard.title} />
+          <Image src={currentCard.image} alt={currentCard.title} fluid />
         )}
       </Row>
       <Row>
@@ -61,7 +63,7 @@ function NewArticlePage() {
         {currentCard.secondImage === "" ? (
           <div></div>
         ) : (
-          <img alt={currentCard.title} src={currentCard.secondImage}></img>
+          <Image alt={currentCard.title} src={currentCard.secondImage} fluid />
         )}
         {currentCard.iframe === "" ? (
           <div></div>
