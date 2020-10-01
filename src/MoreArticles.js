@@ -3,7 +3,6 @@ import "./moreArticles.css";
 import data from "./data.json";
 import { Link } from "react-router-dom";
 import { FormControl, InputLabel, MenuItem, Select } from "@material-ui/core";
-import ArticleCard from "./ArticleCard";
 import ImageCard from "./ImageCard";
 
 function MoreArticles(props) {
