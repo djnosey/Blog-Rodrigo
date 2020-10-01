@@ -3,6 +3,7 @@
   display: flex;
   flex-direction: column;
   width: 75%;
+  height: fit-content;
   margin: 10px auto 30px auto;
   padding: 20px;
   justify-content: center;
@@ -12,7 +13,7 @@
 }
 
 .moreArticles__selectBox {
-  width: 100%;
+  width: 60%;
 }
 
 .moreArticles > h2 {
@@ -33,15 +34,14 @@
   list-style: none;
 }
 
-.moreArticles > ul > a {
-  width:200px !important;
-  height: 250px !important;
 
-}
 
 .moreArticles > ul > a > li {
-  padding: 4px;
+  padding: -10px;
   text-decoration: none;
+  text-align: center;
+  border: 1px solid lightgray;
+
 }
 
 @media (max-width: 440px) {

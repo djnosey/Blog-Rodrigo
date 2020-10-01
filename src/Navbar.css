@@ -11,6 +11,9 @@
   -webkit-box-shadow: 0px 4px 19px -4px rgba(224, 224, 224, 0.58);
   -moz-box-shadow: 0px 4px 19px -4px rgba(224, 224, 224, 0.58);
   box-shadow: 0px 4px 19px -4px rgba(224, 224, 224, 0.58);
+  overflow: visible;
+  z-index: 10;
+
 }
 
 .navbar__logo {
@@ -19,7 +22,6 @@
   margin-bottom: -50px;
   width: 110px !important;
   height: 110px !important;
-  overflow: visible;
   z-index: 2;
   position: relative;
   bottom: 40px;
@@ -29,6 +31,7 @@
   font-family: "Ubuntu";
   margin-left: 20px;
   width: 200px;
+  align-self: start;
 }
 
 .navbar__title > a {
@@ -40,6 +43,7 @@
   margin-right: 20px;
   width: 200px;
   justify-content: flex-end;
+  align-self: start;
 
 }
 
@@ -63,18 +67,17 @@
   color: white;
 }
 .navbar__logo {
-  margin-top: 80px;
+  margin-top: 25px;
   position: relative;
   width: 175px;
   height: 175px;
   z-index: 5;
-  overflow: visible;
 }
 
 .navbar__box {
   z-index: 0;
   position: absolute;
-  top: 57px;
+  top: 50px;
   height: 50px;
   width: 100%;
   background-image: linear-gradient(
